@@ -8,6 +8,7 @@ Information on open source GIS and data set sources
 * [GRASS](https://grass.osgeo.org/)
 * [gvGIS](http://www.gvsig.com/en/products/gvsig-desktop)
 * [Whitebox GAT Project](https://www.uoguelph.ca/~hydrogeo/Whitebox/index.html)
+* [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt)
 * [Terraformer](http://terraformer.io/) &mdash; Terraformer is an open source (MIT licensed) Javascript geo toolkit, built for the server and the browser.
 * [Tegola](https://tegola.io/) &mdash; An open source vector tile server written in Go, Tegola takes geospatial data and slices it into vector tiles that can be efficiently delivered to any client.
 * [GeoTrellis](https://geotrellis.io/) &mdash; GeoTrellis is a geographic data processing engine for high performance applications.
