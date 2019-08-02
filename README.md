@@ -14,7 +14,8 @@ Information on open source GIS and data set sources
 * [Tegola](https://tegola.io/) &mdash; An open source vector tile server written in Go, Tegola takes geospatial data and slices it into vector tiles that can be efficiently delivered to any client.
 * [GeoTrellis](https://geotrellis.io/) &mdash; GeoTrellis is a geographic data processing engine for high performance applications.
 * [LocationTech JTS Topology Suite](https://projects.eclipse.org/projects/locationtech.jts) &mdash; The LocationTech JTS Topology Suite (JTS) is an open source Java software library that provides an object model for planar geometry together with a set of fundamental geometric functions.
-* [PDAL - Point Data Abstraction Library](https://pdal.io/index.html) &mdash; PDAL is a C++ BSD library for translating and manipulating point cloud data. It is very much like the GDAL library which handles raster and vector data. 
+* [PDAL - Point Data Abstraction Library](https://pdal.io/index.html) &mdash; PDAL is a C++ BSD library for translating and manipulating point cloud data. It is very much like the GDAL library which handles raster and vector data.
+* [LAStools](https://github.com/AnalyticalGraphicsInc/LAStools) &mdash; efficient tools for LiDAR processing.
 * [GDAL - Geospatial Data Abstraction Library ](https://gdal.org/) &mdash; GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation.
 * [GeoMesa](https://www.geomesa.org/) &mdash; Store, index, query, and transform spatio-temporal data at scale
 in HBase, Accumulo, Cassandra, Kafka and Spark.
@@ -27,7 +28,9 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [Geomajas](http://www.geomajas.org/) &mdash; Geomajas is a collection of free and open source GIS libraries, tools and API's for a complete end-to-end web mapping solution.
 * [GeoTools](https://geotools.org/) &mdash; GeoTools is an open source Java library that provides tools for geospatial data.
 * [MapFish](http://www.mapfish.org/) &mdash; MapFish is a flexible and complete framework for building rich web-mapping applications. It emphasizes high productivity, and high-quality development.
-* [GeoSHAPE](http://geoshape.org/)
+* [GeoSHAPE (Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement)](http://geoshape.org/) &mdash; GeoSHAPE gives organizations the ability to create, share, and visualize information through dynamic, collaborative maps.
+* [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
+* [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
 
 ## Learning
 
