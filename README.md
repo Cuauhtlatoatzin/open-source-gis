@@ -59,6 +59,49 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [GeoTools](https://geotools.org/) &mdash; GeoTools is an open source Java library that provides tools for geospatial data.
 * [Orfeo ToolBox](https://www.orfeo-toolbox.org/) &mdash; Orfeo ToolBox is an open-source project for state-of-the-art remote sensing, including a fast image viewer, apps callable from Bash, Python or QGIS, and a powerful C++ API.
 
+## Data Sources
+
+Typical data sources include the following scales (adapted from [Getting USGS Data](http://vterrain.org/Misc/usgs_data.html)).
+
+
+| Arc             | Meters (approximate) | Used for                         |
+| --------------- | -------------------- | -------------------------------- |
+| 1 degree        | 110 kilometers       |                                  |
+| 7.5 arc minutes | 14 kilometers        | Size of a traditional map "quad" |
+| 30 arc seconds  | 1 kilometer          | Global elevation                 |
+| 15 arc seconds  | 0.5 kilometer        |                                  |
+| 3 arc seconds   | 90 meters            | World-wide SRTM                  |
+| 1 arc second    | 30 meters            | DEM from topo, USA SRTM          |
+| 1/3 arc second  | 10 meters            | DEM from topo                    |
+| 1/9 arc second  | 3.4 meters           | Newer DEM from LIDAR             |
+
+### General Sources
+
+* [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.
+* [GMTED2010](https://www.usgs.gov/land-resources/eros/coastal-changes-and-impacts/gmted2010?qt-science_support_page_related_con=0#qt-science_support_page_related_con) &mdash; The USGS and the National Geospatial-Intelligence Agency (NGA) have collaborated on the development of a notably enhanced global elevation model called the Global Multi-resolution Terrain Elevation Data (GMTED2010), which has replaced GTOPO30 as the elevation dataset of choice for global and continental scale applications.
+* [USGS EROS Archive - Digital Elevation - Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects) &mdash; The Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010) provides a new level of detail in global topographic data. The GMTED2010 product suite contains seven new raster elevation products for each of the 30-, 15-, and 7.5-arc-second spatial resolutions and incorporates the current best available global elevation data.
+* [GMRT](https://www.gmrt.org/about/index.php) &mdash; The Global Multi-Resolution Topography (GMRT) Synthesis is maintained as a multi-resolution gridded global Digital Elevation Model (DEM) that includes cleaned processed ship-based multibeam sonar data at their full spatial resolution (~100m in the deep sea).
+* [GMRTMapTool](https://www.gmrt.org/GMRTMapTool/) &mdash; This lets you view the data.
+* [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
+* [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
+* [TopoView](https://ngmdb.usgs.gov/topoview/) &mdash; TopoView highlights one of the USGS's most important and useful products, the topographic map. In 1879, the USGS began to map the Nation's topography. This mapping was done at different levels of detail, to support various land use and other purposes. As the years passed, the USGS produced new map versions of each area. TopoView shows the many and varied topographic maps of each of these areas through history. This can be particularly useful for historical purposes, such as finding the names of natural and cultural features that have changed over time.
+* [The National Map (Basic)](https://viewer.nationalmap.gov/basic/)
+* [The National Map (Advanced)](https://viewer.nationalmap.gov/advanced-viewer/)
+* [Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/) &mdash; The Bridge Between Data and Science.
+* [Shuttle Radar Topography Mission](https://www2.jpl.nasa.gov/srtm/)
+* [SRTM](https://wiki.openstreetmap.org/wiki/SRTM) &mdash; The Shuttle Radar Topography Mission (SRTM) (Wikipedia article) is a NASA mission conducted in 2000 to obtain elevation data for most of the world. It is the current dataset of choice for digital elevation model (DEM) data since it has a fairly high resolution (1 arc-second, or around 25 meters), has near-global coverage (from 56°S to 60°N), and is in the public domain.
+* [30-Meter SRTM Tile Downloader](https://dwtkns.com/srtm30m/) &mdash; This interface attempts to ease the pain of downloading 30-meter resolution elevation data from the Shuttle Radar Topography Mission.
+* [USGS EROS Archive - Digital Elevation - Global 30 Arc-Second Elevation (GTOPO30)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30?qt-science_center_objects=0#qt-science_center_objects) &mdash; GTOPO30 is a global digital elevation model (DEM) with a horizontal grid spacing of 30 arc seconds (approximately 1 kilometer). GTOPO30 was derived from several raster and vector sources of topographic information.
+* [SRTM15_PLUS](https://catalog.data.gov/dataset/srtm15-plus-data-fusion-of-shuttle-radar-topography-mission-srtm-land-topography-with-measured-) &mdash; To provide an improved mapping of the seafloor fabric globally, we have used available sounding data along with an improved global marine gravity model to develop at grid at 15 arcsecond resolution (~500 m). Land elevations are based on the best available data from SRTM, ASTER digital elevation models while the ice topography of Greenland and Antarctica is based on CryoSat-2 and IceSat. Ocean bathymetry is based on bathymetric predictions from the latest global gravity model from CryoSat-2 and Jason-1 along with 494 million carefully edited depth soundings at 15 arcsecond resolution. Bathymetry of the Arctic seafloor is based on the IBCAO grid with improved resolution in areas of multibeam coverage. We have used the bathymetry grid along with the improved gravity to construct a global map of abyssal hill amplitude and orientations and compare the orientations with predictions from seafloor age gradient analysis. Areas of disagreement reveal propagating rifts, microplates, and tectonic reorganizations. This SRTM15_PLUS provides the foundational bathymetry layer for Google Earth and is freely available at our ftp site (topex.ucsd.edu).
+* [AW3D30](https://wiki.openstreetmap.org/wiki/AW3D30) &mdash; The ALOS Global Digital Surface Model "ALOS World 3D - 30m" (AW3D30) is the dataset with a horizontal resolution of approximately 30-meter mesh (1 arcsec), provided by Japan Aerospace Exploration Agency (JAXA) free of charge.
+* [ASTER Global Digital Elevation Map](https://asterweb.jpl.nasa.gov/gdem.asp) &mdash; Advanced Spaceborne Thermal Emission and Reflection Radiometer.
+* [GEBCO 2019 Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)
+* [NHDPlus High Resolution](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/nhdplus-high-resolution) &mdash; The NHDPlus HR is a national, geospatial model of the flow of water across the landscape and through the stream network. The NHDPlus HR is built using the National Hydrography Dataset High Resolution data at 1:24,000 scale or better, the 1/3 arc-second (10 meter ground spacing) 3D Elevation Program data, and the nationally complete Watershed Boundary Dataset.
+* [ECS Data Access](https://www.ngdc.noaa.gov/mgg/ecs/cruises.html) &mdash; NCEI archives bathymetric, gravity, magnetic, seismic, and geologic sample data from the U.S. coastal waters to the deep ocean. Data collected as part of the U.S. ECS Project are in the public domain and made available as rapidly as possible.
+* [USGS EROS Archive - Products Overview](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects) &mdash; Explore the world’s largest civilian collection of images of the Earth’s surface. Find satellite images and data, aerial photography, elevation and land cover datasets, digitized maps, and our Image Gallery collections.
+* [Coastal Elevation Models](https://www.ngdc.noaa.gov/mgg/coastal/coastal.html) &mdash; NCEI builds and distributes high-resolution, coastal digital elevation models (DEMs) that integrate ocean bathymetry and land topography supporting NOAA's mission to understand and predict changes in Earth's environment, and conserve and manage coastal and marine resources to meet our Nation's economic, social, and environmental needs.
+* [Digital Elevation Data](http://viewfinderpanoramas.org/dem3.html) &mdash; Links to many different sources of DEMs from around the world.
+
 ## Learning
 
 * [A Gentle Introduction to GIS](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/index.html)
@@ -109,7 +152,3 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [Case Study: Developing OpenLayers-based Mobile Applications — Syrus Mesdaghi, LMN Solutions / NSP-Noblis, Kevin Zusy, No](https://vimeo.com/106852747)
 * [ROGUE GeoTech2013 Talk](https://speakerdeck.com/scottevil/rogue-geotech2013-talk)
 * [Arbiter GeoDC Lightning Talk](https://speakerdeck.com/scottevil/arbiter-geodc-lightning-talk)
-
-## Data Sources
-
-* [GEBCO 2019 Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)
