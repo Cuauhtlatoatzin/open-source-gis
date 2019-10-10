@@ -1,4 +1,5 @@
 # open-source-gis
+
 Information on open source GIS and data set sources
 
 ## GIS Software
@@ -12,6 +13,8 @@ Information on open source GIS and data set sources
 * [gvGIS](http://www.gvsig.com/en/products/gvsig-desktop)
 * [Whitebox GAT Project](https://www.uoguelph.ca/~hydrogeo/Whitebox/index.html)
 * [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt)
+* [GeoMapApp](http://www.geomapapp.org/)
+* [GPlates](http://www.gplates.org/index.html) &mdash; [Sourceforge](https://sourceforge.net/projects/gplates/)
 
 ### Mapping Application Frameworks
 
@@ -52,17 +55,37 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [GEOS - Geometry Engine, Open Source](http://trac.osgeo.org/geos) &mdash; GEOS (Geometry Engine - Open Source) is a C++ port of the ​JTS Topology Suite (JTS). It aims to contain the complete functionality of JTS in C++. This includes all the ​OpenGIS Simple Features for SQL spatial predicate functions and spatial operators, as well as specific JTS enhanced functions. GEOS provides spatial functionality to many other projects and products.
 * [PDAL - Point Data Abstraction Library](https://pdal.io/index.html) &mdash; PDAL is a C++ BSD library for translating and manipulating point cloud data. It is very much like the GDAL library which handles raster and vector data.
 * [LAStools](https://github.com/AnalyticalGraphicsInc/LAStools) &mdash; efficient tools for LiDAR processing.
-* [GDAL - Geospatial Data Abstraction Library ](https://gdal.org/) &mdash; GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation.
+* [GDAL - Geospatial Data Abstraction Library](https://gdal.org/) &mdash; GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation.
 * [Parallel I/O Libraries (PIO)](https://ncar.github.io/ParallelIO/) &mdash; The Parallel IO libraries (PIO) are high-level parallel I/O C and Fortran libraries for structured grid applications. PIO provides a netCDF-like API, and allows users to designate some subset of processors to perform IO. Computational code calls netCDF-like functions to read and write data, and PIO uses the IO processors to perform all necessary IO.
 * [PnetCDF](https://trac.mcs.anl.gov/projects/parallel-netcdf) &mdash; PnetCDF is a high-performance parallel I/O library for accessing files in format compatibility with ​Unidata's NetCDF, specifically the formats of CDF-1, 2, and 5. The CDF-5 file format, an extension of CDF-2, supports unsigned data types and uses 64-bit integers to allow users to define large dimensions, attributes, and variables (> 2B array elements).
 * [ROMIO](https://www.mcs.anl.gov/projects/romio/) &mdash; ROMIO is a high-performance, portable implementation of MPI-IO, the I/O chapter in MPI-2. ROMIO is optimized for noncontiguous access patterns, which are common in parallel applications. It has an optimized implementation of collective I/O, an important optimization in parallel I/O.
 * [GeoTools](https://geotools.org/) &mdash; GeoTools is an open source Java library that provides tools for geospatial data.
 * [Orfeo ToolBox](https://www.orfeo-toolbox.org/) &mdash; Orfeo ToolBox is an open-source project for state-of-the-art remote sensing, including a fast image viewer, apps callable from Bash, Python or QGIS, and a powerful C++ API.
+* [pygplates](https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-18/)
+* [PlateTectonicTools](https://github.com/EarthByte/PlateTectonicTools)
+* [spatial-temporal-exploration](https://github.com/EarthByte/spatial-temporal-exploration)
+* [predicting-sediment-thickness](https://github.com/EarthByte/predicting-sediment-thickness)
+* [paleoclimate-reconstruction](https://github.com/EarthByte/paleoclimate-reconstruction)
+* [GPplus](https://github.com/sebhaan/GPplus)
+* [UW-Deepdive-Infrastructure/blackstack](https://github.com/UW-Deepdive-Infrastructure/blackstack)
+* [CitcomS with Data Assimilation](https://github.com/EarthByte/citcoms)
+  * [Bower DJ, Gurnis M, Flament N (2015) Assimilating lithosphere and slab history in 4-D Earth models. Phys. Earth Planet. Inter., 238: 8-22. doi: 10.1016/j.pepi.2014.10.013.](https://eartharxiv.org/9aey5/)
+* [PyBacktrack](https://github.com/EarthByte/pyBacktrack) &mdash; A tool for reconstructing paleobathymetry on oceanic and continental crust.
+  * [Müller RD, Cannon J, Williams S, Dutkiewicz A (2018) PyBacktrack 1.0: A Tool for Reconstructing Paleobathymetry on Oceanic and Continental Crust. Geochemistry, Geophysics, Geosystems. 19: 1898-1909. doi: 10.1029/2017GC007313](https://www.researchgate.net/publication/325045269_PyBacktrack_10_A_Tool_for_Reconstructing_Paleobathymetry_on_Oceanic_and_Continental_Crust)
+* [EarthByte/UW2-tests-and-benchmarks](https://github.com/EarthByte/UW2-tests-and-benchmarks)
+* [LavaVu](https://github.com/lavavu/LavaVu) &mdash; Lightweight, Automatable Visualisation & Analysis Viewing Utility
+  * [Kaluza O, Moresi L, Mansour J, Barnes DG. lavavu/LavaVu: v1.4.6. Zenodo; 2019. doi:10.5281/zenodo.3470773](http://doi.org/10.5281/zenodo.3470773)
+* [stripy](https://github.com/underworldcode/stripy) &mdash; 2D spherical and Cartesian triangulation toolkit using tripack, stripack, srfpack and ssrfpack.
+  * [Moresi L and Mather BR, (2019) Stripy: A Python module for (constrained) triangulation in Cartesian coordinates and on a sphere. Journal of Open Source Software. 4(38): 1410.](https://doi.org/10.21105/joss.01410)
+* [underworld2](https://github.com/underworldcode/underworld2) &mdash; A parallel, particle-in-cell, finite element code for Geodynamics.
+  * [jmansour, Kaluza O, Giordani J, Beucher R, Farrington R, Kennedy G, et al. underworldcode/underworld2: v2.8.1b. Zenodo; 2019. doi:10.5281/zenodo.3384283](http://doi.org/10.5281/zenodo.3384283)
+* [Underworld Geodynamics](https://github.com/underworldcode/UWGeodynamics)
+  * [Beucher R, Laik A, Giordani J, Mondy L, Farrington R, Barba LA, et al. underworldcode/UWGeodynamics: UWGeodynamics v2.8. Zenodo; 2019. doi:10.5281/zenodo.3366398](http://doi.org/10.5281/zenodo.3366398)
+  * [Beucher R et al. (2019) UWGeodynamics: A teaching and research tool for numerical geodynamic modelling. Journal of Open Source Software. 4(36): 1136](https://doi.org/10.21105/joss.01136)
 
 ## Data Sources
 
 Typical data sources include the following scales (adapted from [Getting USGS Data](http://vterrain.org/Misc/usgs_data.html)).
-
 
 | Arc             | Meters (approximate) | Used for                         |
 | --------------- | -------------------- | -------------------------------- |
@@ -75,12 +98,12 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 | 1/3 arc second  | 10 meters            | DEM from topo                    |
 | 1/9 arc second  | 3.4 meters           | Newer DEM from LIDAR             |
 
-### General Sources
+### Elevation Maps
 
 * [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.
 * [GMTED2010](https://www.usgs.gov/land-resources/eros/coastal-changes-and-impacts/gmted2010?qt-science_support_page_related_con=0#qt-science_support_page_related_con) &mdash; The USGS and the National Geospatial-Intelligence Agency (NGA) have collaborated on the development of a notably enhanced global elevation model called the Global Multi-resolution Terrain Elevation Data (GMTED2010), which has replaced GTOPO30 as the elevation dataset of choice for global and continental scale applications.
 * [USGS EROS Archive - Digital Elevation - Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects) &mdash; The Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010) provides a new level of detail in global topographic data. The GMTED2010 product suite contains seven new raster elevation products for each of the 30-, 15-, and 7.5-arc-second spatial resolutions and incorporates the current best available global elevation data.
-* [GMRT](https://www.gmrt.org/about/index.php) &mdash; The Global Multi-Resolution Topography (GMRT) Synthesis is maintained as a multi-resolution gridded global Digital Elevation Model (DEM) that includes cleaned processed ship-based multibeam sonar data at their full spatial resolution (~100m in the deep sea).
+* [Ryan, W.B.F., S.M. Carbotte, J.O. Coplan, S. O'Hara, A. Melkonian, R. Arko, R.A. Weissel, V. Ferrini, A. Goodwillie, F. Nitsche, J. Bonczkowski, and R. Zemsky (2009), Global Multi-Resolution Topography synthesis, Geochem. Geophys. Geosyst., 10, Q03014, doi:10.1029/2008GC002332.](https://www.gmrt.org/about/index.php) &mdash; The Global Multi-Resolution Topography (GMRT) Synthesis is maintained as a multi-resolution gridded global Digital Elevation Model (DEM) that includes cleaned processed ship-based multibeam sonar data at their full spatial resolution (~100m in the deep sea).
 * [GMRTMapTool](https://www.gmrt.org/GMRTMapTool/) &mdash; This lets you view the data.
 * [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
 * [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
@@ -101,6 +124,34 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [USGS EROS Archive - Products Overview](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects) &mdash; Explore the world’s largest civilian collection of images of the Earth’s surface. Find satellite images and data, aerial photography, elevation and land cover datasets, digitized maps, and our Image Gallery collections.
 * [Coastal Elevation Models](https://www.ngdc.noaa.gov/mgg/coastal/coastal.html) &mdash; NCEI builds and distributes high-resolution, coastal digital elevation models (DEMs) that integrate ocean bathymetry and land topography supporting NOAA's mission to understand and predict changes in Earth's environment, and conserve and manage coastal and marine resources to meet our Nation's economic, social, and environmental needs.
 * [Digital Elevation Data](http://viewfinderpanoramas.org/dem3.html) &mdash; Links to many different sources of DEMs from around the world.
+
+### Geological Data
+
+* [Global Geology Data Sets. United States Naval Academy.](https://www.usna.edu/Users/oceano/pguth/md_help/html/global_geology.htm)
+* [Manaugh G, Twilley N (2013) What Did the Continents Look Like Millions of Years Ago? The Atlantic. September 23](https://www.theatlantic.com/technology/archive/2013/09/what-did-the-continents-look-like-millions-of-years-ago/279892/) &mdash; Article related to the maps below.
+* [Blakey R (2016) Global Paleogeography and Tectonics in Deep Time Series. Deep Time Maps. Colorado Plateau Geosystems Inc.](http://deeptimemaps.com/global-paleogeography-and-tectonics-in-deep-time-series/) &mdash; [Details](http://deeptimemaps.com/global-series-details/) &mdash; The series is completely proprietary, but it is interesting to look at.
+* [Macrostrat](https://macrostrat.org/)
+* [OneGeology](http://portal.onegeology.org/OnegeologyGlobal/) &mdash; This is an interface and initiative to provide a global, distributed set of data sources for geoscience.
+* [How to serve a OneGeology level 1 conformant Web Map Service (WMS) - Cookbook 1](http://www.onegeology.org/wmsCookbook/home.html)
+* [GeoSciML](http://www.onegeology.org/technical_progress/geosciml.html)
+* [Wright et al. (2013) Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10:1529-1541](https://www.biogeosciences.net/10/1529/2013/bg-10-1529-2013.pdf)
+* [Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007584)
+* [Müller RD et al. (2019) A Global Plate Model Including Lithospheric Deformation Along Major Rifts and Orogens Since the Triassic. Tectonics. 38(6): 184-1907.](https://doi.org/10.1029/2018TC005462)
+* [Müller D, SEton M, Zahirovic S (2019) How Earth’s continents became twisted and contorted over millions of years. The Conversation. May 8.](https://theconversation.com/how-earths-continents-became-twisted-and-contorted-over-millions-of-years-116168)
+* [EarthByte Staff (2019) GPlates 2.2 software and data sets. EarthByte. September 5.](https://www.earthbyte.org/gplates-2-2-software-and-data-sets/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
+* [EarthByte Data Collections Direct Link](https://www.earthbyte.org/webdav/ftp/Data_Collections/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
+* [The Human-Induced Earthquake Database (HiQuake)](http://inducedearthquakes.org/)
+  * Foulger, G. R., Wilson, M., Gluyas, J., Julian, B. R., & Davies, R. (2017). Global review of human-induced earthquakes. Earth-Science Reviews.
+  * Wilson, M. P., Foulger, G. R., Gluyas, J. G., Davies, R. J., & Julian, B. R. (2017). HiQuake: The human‐induced earthquake database. Seismological Research Letters, 88(6), 1560-1565.
+* [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
+
+### Paleobiological Data
+
+* [Paleobiology Database](https://paleobiodb.org)
+* [Paleobiology Database: UW-Madison on Github](https://github.com/paleobiodb)
+* [EarthLife Consortium](http://earthlifeconsortium.org/)
+* [EarthLife Consortium on Github](https://github.com/EarthLifeConsortium)
+* [Neotoma Paleoecology Database and Community](https://www.neotomadb.org/)
 
 ## Learning
 
@@ -152,3 +203,8 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [Case Study: Developing OpenLayers-based Mobile Applications — Syrus Mesdaghi, LMN Solutions / NSP-Noblis, Kevin Zusy, No](https://vimeo.com/106852747)
 * [ROGUE GeoTech2013 Talk](https://speakerdeck.com/scottevil/rogue-geotech2013-talk)
 * [Arbiter GeoDC Lightning Talk](https://speakerdeck.com/scottevil/arbiter-geodc-lightning-talk)
+* [GPlates Tutorials](https://sites.google.com/site/gplatestutorials/)
+* [GPlates User Manual](http://www.gplates.org/user-manual/)
+* [Standard file formats for GPlates](https://www.earthbyte.org/standard-file-formats-for-gplates/)
+* [GPlatesPortal](http://portal.gplates.org/)
+* [GPlates versus pyGPlates](https://www.gplates.org/docs/pygplates/pygplates_introduction.html#gplates-versus-pygplates)
