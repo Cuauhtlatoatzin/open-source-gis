@@ -166,6 +166,8 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
   * Foulger, G. R., Wilson, M., Gluyas, J., Julian, B. R., & Davies, R. (2017). Global review of human-induced earthquakes. Earth-Science Reviews.
   * Wilson, M. P., Foulger, G. R., Gluyas, J. G., Davies, R. J., & Julian, B. R. (2017). HiQuake: The human‐induced earthquake database. Seismological Research Letters, 88(6), 1560-1565.
 * [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
+* [GeoMapApp](http://www.geomapapp.org/index.htm)
+  * Cite with `Figure made with GeoMapApp (www.geomapapp.org) / CC BY / CC BY (Ryan et al., 2009)`
 
 ### Paleobiological Data
 
