@@ -87,6 +87,7 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 
 ### Catalogs for look up specific data
 
+* [United States Interagency Elevation Inventory](https://coast.noaa.gov/inventory/) &mdash; The U.S. Interagency Elevation Inventory is a comprehensive, nationwide listing of known high-accuracy topographic and bathymetric data for the United States and its territories.
 * [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
 * [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
 * [TopoView](https://ngmdb.usgs.gov/topoview/) &mdash; TopoView highlights one of the USGS's most important and useful products, the topographic map. In 1879, the USGS began to map the Nation's topography. This mapping was done at different levels of detail, to support various land use and other purposes. As the years passed, the USGS produced new map versions of each area. TopoView shows the many and varied topographic maps of each of these areas through history. This can be particularly useful for historical purposes, such as finding the names of natural and cultural features that have changed over time.
@@ -115,18 +116,24 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 
 #### 1/30 arc second (~1 meter)
 
-* [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.
+* [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.`
   * This only had a subset of the US and Mexico, including Hawai'i.
   * Land only.
+  * WMS Url: https://services.nationalmap.gov/arcgis/services/3DEPElevationIndex/MapServer/WMSServer?request=GetCapabilities&service=WMS
+
+#### 1/9 arc second (~3 meter)
+
+* [1/9th Arc-second Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/national-elevation-dataset-ned-1-9-arc-second-downloadable-data-collection-national-geospatial) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is 1/9 arc-second (approximately 3 m) resolution.`
+  * `The seamless 1/9 arc-second DEM layer project-based coverage for portions of the conterminous United States, limited areas of Alaska, and Guam.`
 
 #### 1/3 arc second (~10 meter)
 
-* [NHDPlus High Resolution](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/nhdplus-high-resolution) &mdash; The NHDPlus HR is a national, geospatial model of the flow of water across the landscape and through the stream network. The NHDPlus HR is built using the National Hydrography Dataset High Resolution data at 1:24,000 scale or better, the 1/3 arc-second (10 meter ground spacing) 3D Elevation Program data, and the nationally complete Watershed Boundary Dataset.
+* [NHDPlus High Resolution](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/nhdplus-high-resolution) &mdash; `The NHDPlus HR is a national, geospatial model of the flow of water across the landscape and through the stream network. The NHDPlus HR is built using the National Hydrography Dataset High Resolution data at 1:24,000 scale or better, the 1/3 arc-second (10 meter ground spacing) 3D Elevation Program data, and the nationally complete Watershed Boundary Dataset.`
 
 #### 1 arc second (~30 meter)
 
 * [Shuttle Radar Topography Mission](https://www2.jpl.nasa.gov/srtm/)
-  * [SRTM](https://wiki.openstreetmap.org/wiki/SRTM) &mdash; The Shuttle Radar Topography Mission (SRTM) (Wikipedia article) is a NASA mission conducted in 2000 to obtain elevation data for most of the world. It is the current dataset of choice for digital elevation model (DEM) data since it has a fairly high resolution (1 arc-second, or around 25 meters), has near-global coverage (from 56°S to 60°N), and is in the public domain.
+  * [SRTM](https://wiki.openstreetmap.org/wiki/SRTM) &mdash; `The Shuttle Radar Topography Mission (SRTM) (Wikipedia article) is a NASA mission conducted in 2000 to obtain elevation data for most of the world. It is the current dataset of choice for digital elevation model (DEM) data since it has a fairly high resolution (1 arc-second, or around 25 meters), has near-global coverage (from 56°S to 60°N), and is in the public domain.`
   * [30-Meter SRTM Tile Downloader](https://dwtkns.com/srtm30m/) &mdash; This interface attempts to ease the pain of downloading 30-meter resolution elevation data from the Shuttle Radar Topography Mission.
   * Land only.
 * [AW3D30](https://wiki.openstreetmap.org/wiki/AW3D30) &mdash; The ALOS Global Digital Surface Model "ALOS World 3D - 30m" (AW3D30) is the dataset with a horizontal resolution of approximately 30-meter mesh (1 arcsec), provided by Japan Aerospace Exploration Agency (JAXA) free of charge.
@@ -136,9 +143,10 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
   * Land only.
 
 #### 15 arc second (~500 meter)
-
-* [SRTM15_PLUS](https://catalog.data.gov/dataset/srtm15-plus-data-fusion-of-shuttle-radar-topography-mission-srtm-land-topography-with-measured-) &mdash; To provide an improved mapping of the seafloor fabric globally, we have used available sounding data along with an improved global marine gravity model to develop at grid at 15 arcsecond resolution (~500 m). Land elevations are based on the best available data from SRTM, ASTER digital elevation models while the ice topography of Greenland and Antarctica is based on CryoSat-2 and IceSat. Ocean bathymetry is based on bathymetric predictions from the latest global gravity model from CryoSat-2 and Jason-1 along with 494 million carefully edited depth soundings at 15 arcsecond resolution. Bathymetry of the Arctic seafloor is based on the IBCAO grid with improved resolution in areas of multibeam coverage. We have used the bathymetry grid along with the improved gravity to construct a global map of abyssal hill amplitude and orientations and compare the orientations with predictions from seafloor age gradient analysis. Areas of disagreement reveal propagating rifts, microplates, and tectonic reorganizations. This SRTM15_PLUS provides the foundational bathymetry layer for Google Earth and is freely available at our ftp site (topex.ucsd.edu).
+* [SRTM15+V2.0](https://topex.ucsd.edu/WWW_html/srtm15_plus.html) &mdash; [FTP](ftp://topex.ucsd.edu/pub/srtm15_plus/) &mdash; [figshare](https://figshare.com/projects/SRTM15_V2_0/62045)
+  * [Tozer, B. , D. T. Sandwell, W. H. F. Smith, C. Olson, J. R. Beale, and P. Wessel, Global bathymetry and topography at 15 arc seconds: SRTM15+, Accepted Earth and Space Science, August 3, 2019. DOI: 10.1029/2019EA000658](https://topex.ucsd.edu/sandwell/publications/180_Tozer_SRTM15+.pdf)
 * [GEBCO 2019 Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/) &mdash; GEBCO’s gridded bathymetric data set, the GEBCO_2019 grid, is a global terrain model for ocean and land at 15 arc-second intervals.
+* [SRTM15_PLUS](https://catalog.data.gov/dataset/srtm15-plus-data-fusion-of-shuttle-radar-topography-mission-srtm-land-topography-with-measured-) &mdash; To provide an improved mapping of the seafloor fabric globally, we have used available sounding data along with an improved global marine gravity model to develop at grid at 15 arcsecond resolution (~500 m). Land elevations are based on the best available data from SRTM, ASTER digital elevation models while the ice topography of Greenland and Antarctica is based on CryoSat-2 and IceSat. Ocean bathymetry is based on bathymetric predictions from the latest global gravity model from CryoSat-2 and Jason-1 along with 494 million carefully edited depth soundings at 15 arcsecond resolution. Bathymetry of the Arctic seafloor is based on the IBCAO grid with improved resolution in areas of multibeam coverage. We have used the bathymetry grid along with the improved gravity to construct a global map of abyssal hill amplitude and orientations and compare the orientations with predictions from seafloor age gradient analysis. Areas of disagreement reveal propagating rifts, microplates, and tectonic reorganizations. This SRTM15_PLUS provides the foundational bathymetry layer for Google Earth and is freely available at our ftp site (topex.ucsd.edu).
 
 #### 30 arc seconds (~1 km)
 
@@ -164,12 +172,14 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [Wright et al. (2013) Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10:1529-1541](https://www.biogeosciences.net/10/1529/2013/bg-10-1529-2013.pdf)
 * [Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007584)
 * [Müller RD et al. (2019) A Global Plate Model Including Lithospheric Deformation Along Major Rifts and Orogens Since the Triassic. Tectonics. 38(6): 184-1907.](https://doi.org/10.1029/2018TC005462)
-* [Müller D, SEton M, Zahirovic S (2019) How Earth’s continents became twisted and contorted over millions of years. The Conversation. May 8.](https://theconversation.com/how-earths-continents-became-twisted-and-contorted-over-millions-of-years-116168)
+* [Müller D, Seton M, Zahirovic S (2019) How Earth’s continents became twisted and contorted over millions of years. The Conversation. May 8.](https://theconversation.com/how-earths-continents-became-twisted-and-contorted-over-millions-of-years-116168)
 * [EarthByte Staff (2019) GPlates 2.2 software and data sets. EarthByte. September 5.](https://www.earthbyte.org/gplates-2-2-software-and-data-sets/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
 * [EarthByte Data Collections Direct Link](https://www.earthbyte.org/webdav/ftp/Data_Collections/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
 * [The Human-Induced Earthquake Database (HiQuake)](http://inducedearthquakes.org/)
   * Foulger, G. R., Wilson, M., Gluyas, J., Julian, B. R., & Davies, R. (2017). Global review of human-induced earthquakes. Earth-Science Reviews.
   * Wilson, M. P., Foulger, G. R., Gluyas, J. G., Davies, R. J., & Julian, B. R. (2017). HiQuake: The human‐induced earthquake database. Seismological Research Letters, 88(6), 1560-1565.
+* [Exploring Ocean Tectonics from Space](https://topex.ucsd.edu/grav_outreach/)
+  * [Sandwell DT, Müller RD, Smith WHF, Garcia E, Francis E (2013) New global marine gravity model from CryoSat-2 and Jason-1 reveals buried tectonic structure, Science. 346(6205): 65-67. doi: 10.1126/science.1258213](http://dx.doi.org/10.1126/science.1258213)
 * [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
 * [GeoMapApp](http://www.geomapapp.org/index.htm)
   * Cite with `Figure made with GeoMapApp (www.geomapapp.org) / CC BY / CC BY (Ryan et al., 2009)`
