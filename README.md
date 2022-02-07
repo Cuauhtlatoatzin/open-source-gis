@@ -2,6 +2,134 @@
 
 Information on open source GIS and data set sources
 
+## Maps
+
+* [Maps Are Territories: Science is an Atlas](http://territories.indigenousknowledge.org/home/contents.html)
+
+## Map Projections
+
+* [Investigating Map Projections](https://www.nationalgeographic.org/activity/investigating-map-projections/)
+* [What are Map Projections? (And Why They Are Deceiving To Us)](https://gisgeography.com/map-projections/)
+* [Map projection on Wikipedia](https://en.wikipedia.org/wiki/Map_projection)
+* [List of map projections](https://en.wikipedia.org/wiki/List_of_map_projections)
+* [Jenny, Bernhard, Tom Patterson, and Lorenz Hurni. "Flex Projector–interactive software for designing world map projections." Cartographic Perspectives 59 (2008): 12-27.](https://www.researchgate.net/publication/266016878_Flex_Projector-Interactive_Software_for_Designing_World_Map_Projections)
+* [Equal Earth projection](http://equal-earth.com/equal-earth-projection.html) &mdash; The Equal Earth map projection is a new equal-area pseudocylindrical projection for world maps jointly developed by Bojan Šavrič (Esri), Tom Patterson (US National Park Service), and Bernhard Jenny (Monash University). It was created to provide a visually pleasing alternative to the Gall-Peters projection, which some schools and socially concerned groups have adopted out of concern for fairness. Their priority is to show developing countries in the tropics and developed countries in the north with correctly proportioned sizes.
+  * [Introducing the Equal Earth Projection (Video)](https://www.youtube.com/watch?v=m5Te3JZfPDM)
+
+## Data Sources
+
+### Catalogs for look up specific data
+
+* [United States Interagency Elevation Inventory](https://coast.noaa.gov/inventory/) &mdash; The U.S. Interagency Elevation Inventory is a comprehensive, nationwide listing of known high-accuracy topographic and bathymetric data for the United States and its territories.
+* [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
+* [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
+* [TopoView](https://ngmdb.usgs.gov/topoview/) &mdash; TopoView highlights one of the USGS's most important and useful products, the topographic map. In 1879, the USGS began to map the Nation's topography. This mapping was done at different levels of detail, to support various land use and other purposes. As the years passed, the USGS produced new map versions of each area. TopoView shows the many and varied topographic maps of each of these areas through history. This can be particularly useful for historical purposes, such as finding the names of natural and cultural features that have changed over time.
+* [The National Map (Basic)](https://viewer.nationalmap.gov/basic/)
+* [The National Map (Advanced)](https://viewer.nationalmap.gov/advanced-viewer/)
+* [Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/) &mdash; The Bridge Between Data and Science.
+* [ECS Data Access](https://www.ngdc.noaa.gov/mgg/ecs/cruises.html) &mdash; NCEI archives bathymetric, gravity, magnetic, seismic, and geologic sample data from the U.S. coastal waters to the deep ocean. Data collected as part of the U.S. ECS Project are in the public domain and made available as rapidly as possible.
+* [USGS EROS Archive - Products Overview](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects) &mdash; Explore the world’s largest civilian collection of images of the Earth’s surface. Find satellite images and data, aerial photography, elevation and land cover datasets, digitized maps, and our Image Gallery collections.
+* [Coastal Elevation Models](https://www.ngdc.noaa.gov/mgg/coastal/coastal.html) &mdash; NCEI builds and distributes high-resolution, coastal digital elevation models (DEMs) that integrate ocean bathymetry and land topography supporting NOAA's mission to understand and predict changes in Earth's environment, and conserve and manage coastal and marine resources to meet our Nation's economic, social, and environmental needs.
+* [Digital Elevation Data](http://viewfinderpanoramas.org/dem3.html) &mdash; Links to many different sources of DEMs from around the world.
+
+### Natural Earth Map Data
+
+* [Natural Earth Data](https://www.naturalearthdata.com/) &mdash; Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.
+
+### Elevation Maps
+
+Typical data sources include the following scales (adapted from [Getting USGS Data](http://vterrain.org/Misc/usgs_data.html)).
+
+| Arc             | Meters (approximate) | Used for                         |
+| --------------- | -------------------- | -------------------------------- |
+| 1 degree        | 110 kilometers       |                                  |
+| 7.5 arc minutes | 14 kilometers        | Size of a traditional map "quad" |
+| 30 arc seconds  | 1 kilometer          | Global elevation                 |
+| 15 arc seconds  | 0.5 kilometer        |                                  |
+| 3 arc seconds   | 90 meters            | World-wide SRTM                  |
+| 1 arc second    | 30 meters            | DEM from topo, USA SRTM          |
+| 1/3 arc second  | 10 meters            | DEM from topo                    |
+| 1/9 arc second  | 3.4 meters           | Newer DEM from LIDAR             |
+
+#### Multiresolution
+
+* [Ryan, W.B.F., S.M. Carbotte, J.O. Coplan, S. O'Hara, A. Melkonian, R. Arko, R.A. Weissel, V. Ferrini, A. Goodwillie, F. Nitsche, J. Bonczkowski, and R. Zemsky (2009), Global Multi-Resolution Topography synthesis, Geochem. Geophys. Geosyst., 10, Q03014, doi:10.1029/2008GC002332.](https://www.gmrt.org/about/index.php) &mdash; The Global Multi-Resolution Topography (GMRT) Synthesis is maintained as a multi-resolution gridded global Digital Elevation Model (DEM) that includes cleaned processed ship-based multibeam sonar data at their full spatial resolution (~100m in the deep sea).
+* [GMRTMapTool](https://www.gmrt.org/GMRTMapTool/) &mdash; This lets you view the data.
+* [GMRT Web Services](https://www.gmrt.org/services/index.php)
+
+#### 1/30 arc second (~1 meter)
+
+* [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.`
+  * This only had a subset of the US and Mexico, including Hawai'i.
+  * Land only.
+  * WMS Url: https://services.nationalmap.gov/arcgis/services/3DEPElevationIndex/MapServer/WMSServer?request=GetCapabilities&service=WMS
+
+#### 1/9 arc second (~3 meter)
+
+* [1/9th Arc-second Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/national-elevation-dataset-ned-1-9-arc-second-downloadable-data-collection-national-geospatial) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is 1/9 arc-second (approximately 3 m) resolution.`
+  * `The seamless 1/9 arc-second DEM layer project-based coverage for portions of the conterminous United States, limited areas of Alaska, and Guam.`
+
+#### 1/3 arc second (~10 meter)
+
+* [NHDPlus High Resolution](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/nhdplus-high-resolution) &mdash; `The NHDPlus HR is a national, geospatial model of the flow of water across the landscape and through the stream network. The NHDPlus HR is built using the National Hydrography Dataset High Resolution data at 1:24,000 scale or better, the 1/3 arc-second (10 meter ground spacing) 3D Elevation Program data, and the nationally complete Watershed Boundary Dataset.`
+
+#### 1 arc second (~30 meter)
+
+* [Shuttle Radar Topography Mission](https://www2.jpl.nasa.gov/srtm/)
+  * [SRTM](https://wiki.openstreetmap.org/wiki/SRTM) &mdash; `The Shuttle Radar Topography Mission (SRTM) (Wikipedia article) is a NASA mission conducted in 2000 to obtain elevation data for most of the world. It is the current dataset of choice for digital elevation model (DEM) data since it has a fairly high resolution (1 arc-second, or around 25 meters), has near-global coverage (from 56°S to 60°N), and is in the public domain.`
+  * [30-Meter SRTM Tile Downloader](https://dwtkns.com/srtm30m/) &mdash; This interface attempts to ease the pain of downloading 30-meter resolution elevation data from the Shuttle Radar Topography Mission.
+  * Land only.
+* [AW3D30](https://wiki.openstreetmap.org/wiki/AW3D30) &mdash; The ALOS Global Digital Surface Model "ALOS World 3D - 30m" (AW3D30) is the dataset with a horizontal resolution of approximately 30-meter mesh (1 arcsec), provided by Japan Aerospace Exploration Agency (JAXA) free of charge.
+  * Land only.
+* [ASTER Global Digital Elevation Map](https://asterweb.jpl.nasa.gov/gdem.asp) &mdash; Advanced Spaceborne Thermal Emission and Reflection Radiometer.
+  * [NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team (2019). ASTER Global Digital Elevation Model V003 [Data set]. NASA EOSDIS Land Processes DAAC. Accessed 2019-10-22 from https://doi.org/10.5067/ASTER/ASTGTM.003](https://search.earthdata.nasa.gov/search/granules/collection-details?p=C1575726572-LPDAAC_ECS&q=GDEM&tl=1555913685!4!!)
+  * Land only.
+
+#### 15 arc second (~500 meter)
+* [SRTM15+V2.0](https://topex.ucsd.edu/WWW_html/srtm15_plus.html) &mdash; [FTP](ftp://topex.ucsd.edu/pub/srtm15_plus/) &mdash; [figshare](https://figshare.com/projects/SRTM15_V2_0/62045)
+  * [Tozer, B. , D. T. Sandwell, W. H. F. Smith, C. Olson, J. R. Beale, and P. Wessel, Global bathymetry and topography at 15 arc seconds: SRTM15+, Accepted Earth and Space Science, August 3, 2019. DOI: 10.1029/2019EA000658](https://topex.ucsd.edu/sandwell/publications/180_Tozer_SRTM15+.pdf)
+* [GEBCO 2019 Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/) &mdash; GEBCO’s gridded bathymetric data set, the GEBCO_2019 grid, is a global terrain model for ocean and land at 15 arc-second intervals.
+  * [Blue Earth Bathymetry](http://www.shadedrelief.com/blue-earth/) &mdash; Generalized GEBCO Data for Seafloor Mapping.
+* [SRTM15_PLUS](https://catalog.data.gov/dataset/srtm15-plus-data-fusion-of-shuttle-radar-topography-mission-srtm-land-topography-with-measured-) &mdash; To provide an improved mapping of the seafloor fabric globally, we have used available sounding data along with an improved global marine gravity model to develop at grid at 15 arcsecond resolution (~500 m). Land elevations are based on the best available data from SRTM, ASTER digital elevation models while the ice topography of Greenland and Antarctica is based on CryoSat-2 and IceSat. Ocean bathymetry is based on bathymetric predictions from the latest global gravity model from CryoSat-2 and Jason-1 along with 494 million carefully edited depth soundings at 15 arcsecond resolution. Bathymetry of the Arctic seafloor is based on the IBCAO grid with improved resolution in areas of multibeam coverage. We have used the bathymetry grid along with the improved gravity to construct a global map of abyssal hill amplitude and orientations and compare the orientations with predictions from seafloor age gradient analysis. Areas of disagreement reveal propagating rifts, microplates, and tectonic reorganizations. This SRTM15_PLUS provides the foundational bathymetry layer for Google Earth and is freely available at our ftp site (topex.ucsd.edu).
+
+#### 30 arc seconds (~1 km)
+
+* [USGS EROS Archive - Digital Elevation - Global 30 Arc-Second Elevation (GTOPO30)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30?qt-science_center_objects=0#qt-science_center_objects) &mdash; GTOPO30 is a global digital elevation model (DEM) with a horizontal grid spacing of 30 arc seconds (approximately 1 kilometer). GTOPO30 was derived from several raster and vector sources of topographic information.
+* [GMTED2010](https://www.usgs.gov/land-resources/eros/coastal-changes-and-impacts/gmted2010?qt-science_support_page_related_con=0#qt-science_support_page_related_con) &mdash; The USGS and the National Geospatial-Intelligence Agency (NGA) have collaborated on the development of a notably enhanced global elevation model called the Global Multi-resolution Terrain Elevation Data (GMTED2010), which has replaced GTOPO30 as the elevation dataset of choice for global and continental scale applications.
+* [USGS EROS Archive - Digital Elevation - Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects) &mdash; The Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010) provides a new level of detail in global topographic data. The GMTED2010 product suite contains seven new raster elevation products for each of the 30-, 15-, and 7.5-arc-second spatial resolutions and incorporates the current best available global elevation data.
+
+### Geological Data
+
+* [Global Geology Data Sets. United States Naval Academy.](https://www.usna.edu/Users/oceano/pguth/md_help/html/global_geology.htm)
+* [Manaugh G, Twilley N (2013) What Did the Continents Look Like Millions of Years Ago? The Atlantic. September 23](https://www.theatlantic.com/technology/archive/2013/09/what-did-the-continents-look-like-millions-of-years-ago/279892/) &mdash; Article related to the maps below.
+* [Blakey R (2016) Global Paleogeography and Tectonics in Deep Time Series. Deep Time Maps. Colorado Plateau Geosystems Inc.](http://deeptimemaps.com/global-paleogeography-and-tectonics-in-deep-time-series/) &mdash; [Details](http://deeptimemaps.com/global-series-details/) &mdash; The series is completely proprietary, but it is interesting to look at.
+* [Macrostrat](https://macrostrat.org/)
+* [OneGeology](http://portal.onegeology.org/OnegeologyGlobal/) &mdash; This is an interface and initiative to provide a global, distributed set of data sources for geoscience.
+* [How to serve a OneGeology level 1 conformant Web Map Service (WMS) - Cookbook 1](http://www.onegeology.org/wmsCookbook/home.html)
+* [GeoSciML](http://www.onegeology.org/technical_progress/geosciml.html)
+* [Wright et al. (2013) Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10:1529-1541](https://www.biogeosciences.net/10/1529/2013/bg-10-1529-2013.pdf)
+* [Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007584)
+* [Müller RD et al. (2019) A Global Plate Model Including Lithospheric Deformation Along Major Rifts and Orogens Since the Triassic. Tectonics. 38(6): 184-1907.](https://doi.org/10.1029/2018TC005462)
+* [Müller D, Seton M, Zahirovic S (2019) How Earth’s continents became twisted and contorted over millions of years. The Conversation. May 8.](https://theconversation.com/how-earths-continents-became-twisted-and-contorted-over-millions-of-years-116168)
+* [EarthByte Staff (2019) GPlates 2.2 software and data sets. EarthByte. September 5.](https://www.earthbyte.org/gplates-2-2-software-and-data-sets/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
+* [EarthByte Data Collections Direct Link](https://www.earthbyte.org/webdav/ftp/Data_Collections/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
+* [The Human-Induced Earthquake Database (HiQuake)](http://inducedearthquakes.org/)
+  * Foulger, G. R., Wilson, M., Gluyas, J., Julian, B. R., & Davies, R. (2017). Global review of human-induced earthquakes. Earth-Science Reviews.
+  * Wilson, M. P., Foulger, G. R., Gluyas, J. G., Davies, R. J., & Julian, B. R. (2017). HiQuake: The human‐induced earthquake database. Seismological Research Letters, 88(6), 1560-1565.
+* [Exploring Ocean Tectonics from Space](https://topex.ucsd.edu/grav_outreach/)
+  * [Sandwell DT, Müller RD, Smith WHF, Garcia E, Francis E (2013) New global marine gravity model from CryoSat-2 and Jason-1 reveals buried tectonic structure, Science. 346(6205): 65-67. doi: 10.1126/science.1258213](http://dx.doi.org/10.1126/science.1258213)
+* [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
+* [GeoMapApp](http://www.geomapapp.org/index.htm)
+  * Cite with `Figure made with GeoMapApp (www.geomapapp.org) / CC BY / CC BY (Ryan et al., 2009)`
+
+### Paleobiological Data
+
+* [Paleobiology Database](https://paleobiodb.org)
+* [Paleobiology Database: UW-Madison on Github](https://github.com/paleobiodb)
+* [EarthLife Consortium](http://earthlifeconsortium.org/)
+* [EarthLife Consortium on Github](https://github.com/EarthLifeConsortium)
+* [Neotoma Paleoecology Database and Community](https://www.neotomadb.org/)
+
 ## GIS Software
 
 ### Desktop
@@ -16,18 +144,42 @@ Information on open source GIS and data set sources
 * [GeoMapApp](http://www.geomapapp.org/)
 * [GPlates](http://www.gplates.org/index.html) &mdash; [Sourceforge](https://sourceforge.net/projects/gplates/)
 
-### Mapping Application Frameworks
+### 3D Relief Map Making
+
+* [Blender GIS](https://github.com/domlysz/BlenderGIS) &mdash; Blender addons to make the bridge between Blender and geographic data.
+  * [Making 3D landscape in Blender using GIS Addon (Video)](https://www.youtube.com/watch?v=6Cw_uJCp39k)
+  * [CREATING SHADED RELIEF IN BLENDER](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/)
+  * [Shaded relief with BlenderGIS (2020), part 1](https://wanderingcartographer.wordpress.com/2019/11/08/making-shaded-relief-with-blendergis-2019/)
+  * [Shaded Relief with BlenderGIS (2019), part 2](https://wanderingcartographer.wordpress.com/2019/11/08/shaded-relief-with-blendergis-2019-part-2/)
+  * [Shaded relief with BlenderGIS (2019), part 3](https://wanderingcartographer.wordpress.com/2019/11/24/shaded-relief-with-blendergis-2019-part-3/)
+  * [Cutting large DEMs into square, partially overlapping tiles](https://wanderingcartographer.wordpress.com/2014/11/14/cutting-large-dems-into-square-partially-overlapping-tiles/)
+  * [A new map of the Bulkley Valley](https://wanderingcartographer.wordpress.com/2015/05/27/a-new-map-of-the-bulkley-valley/)
+* [Raster Chunk Processing (rcp)](https://github.com/jacobdadams/rcp) &mdash; Parallelized raster chunk processing. [Makes some of the prettiest relief maps. -JB]
+  * [Part I: Introducing raster_chunk_processing.py (aka, RCP)](https://gisjake.blogspot.com/2018/10/introducing-rasterchunkprocessingpy-aka.html)
+  * [Part II: raster_chunk_processing.py Installation and Usage](https://gisjake.blogspot.com/2018/10/rasterchunkprocessingpy-installation.html)
+  * [Part III: raster_chunk_processing.py Examples](https://gisjake.blogspot.com/2018/10/rasterchunkprocessingpy-examples.html)
+  * [rcp: UGIC 2019 Presentation](https://drive.google.com/file/d/1fW8m9r2CcVDMlAPGgA0uyrg56LL9CLYM/view)
+  * [Shaded Relief using Skymodels, courtesy of Raster Chunk Processing](https://wanderingcartographer.wordpress.com/2020/05/08/shaded-relief-using-skymodels-courtesy-of-raster-chunk-processing/)
+    * [Skymodels gallery](https://wanderingcartographer.wordpress.com/skymodels-gallery/)
+  * [Skymodels With rcp: A Couple Quick Notes](https://gisjake.blogspot.com/2020/05/skymodels-with-rcp-couple-quick-notes.html)
+  * [Kennelly, Patrick J., and A. James Stewart. "General sky models for illuminating terrains." International Journal of Geographical Information Science 28, no. 2 (2014): 383-406.](http://myweb.liu.edu/pkennell/reprints/peer-reviewed/GeneralSkyModels.pdf)
+
+### Frontend Frameworks
+
+* [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
+* [GeoMoose](https://www.geomoose.org/) &mdash; GeoMoose is a Web Client JavaScript Framework for displaying distributed cartographic data. GeoMoose has a number of strengths including modularity, configurability, and delivers a number of core functionalities in its packages. GeoMoose is also very light weight for servers making it easy to handle a large number of users, with a large number of layers, and a large number of services without stressing a server.
+* [OpenLayers](https://openlayers.org/) &mdash; OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data and markers loaded from any source. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the 2-clause BSD License (also known as the FreeBSD).
+
+### Application Frameworks
 
 * [GeoServer](http://geoserver.org/) &mdash; GeoServer is an open source server for sharing geospatial data.
 * [Tegola](https://tegola.io/) &mdash; An open source vector tile server written in Go, Tegola takes geospatial data and slices it into vector tiles that can be efficiently delivered to any client.
 * [IstSOS](http://istsos.org/) &mdash; IstSOS is an OGC SOS server implementation written in Python.
 * [deegree](https://www.deegree.org/) &mdash; deegree is open source software for spatial data infrastructures and the geospatial web. deegree offers components for geospatial data management, including data access, visualization, discovery and security. Open standards are at the heart of deegree.
-* [GeoMoose](https://www.geomoose.org/) &mdash; GeoMoose is a Web Client JavaScript Framework for displaying distributed cartographic data. GeoMoose has a number of strengths including modularity, configurability, and delivers a number of core functionalities in its packages. GeoMoose is also very light weight for servers making it easy to handle a large number of users, with a large number of layers, and a large number of services without stressing a server.
+* [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
 * [Geomajas](http://www.geomajas.org/) &mdash; Geomajas is a collection of free and open source GIS libraries, tools and API's for a complete end-to-end web mapping solution.
 * [MapFish](http://www.mapfish.org/) &mdash; MapFish is a flexible and complete framework for building rich web-mapping applications. It emphasizes high productivity, and high-quality development.
 * [GeoSHAPE (Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement)](http://geoshape.org/) &mdash; GeoSHAPE gives organizations the ability to create, share, and visualize information through dynamic, collaborative maps.
-* [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
-* [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
 
 ### Data at Scale
 
@@ -84,116 +236,11 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
   * [Beucher R, Laik A, Giordani J, Mondy L, Farrington R, Barba LA, et al. underworldcode/UWGeodynamics: UWGeodynamics v2.8. Zenodo; 2019. doi:10.5281/zenodo.3366398](http://doi.org/10.5281/zenodo.3366398)
   * [Beucher R et al. (2019) UWGeodynamics: A teaching and research tool for numerical geodynamic modelling. Journal of Open Source Software. 4(36): 1136](https://doi.org/10.21105/joss.01136)
 
-## Data Sources
-
-### Catalogs for look up specific data
-
-* [United States Interagency Elevation Inventory](https://coast.noaa.gov/inventory/) &mdash; The U.S. Interagency Elevation Inventory is a comprehensive, nationwide listing of known high-accuracy topographic and bathymetric data for the United States and its territories.
-* [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
-* [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
-* [TopoView](https://ngmdb.usgs.gov/topoview/) &mdash; TopoView highlights one of the USGS's most important and useful products, the topographic map. In 1879, the USGS began to map the Nation's topography. This mapping was done at different levels of detail, to support various land use and other purposes. As the years passed, the USGS produced new map versions of each area. TopoView shows the many and varied topographic maps of each of these areas through history. This can be particularly useful for historical purposes, such as finding the names of natural and cultural features that have changed over time.
-* [The National Map (Basic)](https://viewer.nationalmap.gov/basic/)
-* [The National Map (Advanced)](https://viewer.nationalmap.gov/advanced-viewer/)
-* [Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/) &mdash; The Bridge Between Data and Science.
-* [ECS Data Access](https://www.ngdc.noaa.gov/mgg/ecs/cruises.html) &mdash; NCEI archives bathymetric, gravity, magnetic, seismic, and geologic sample data from the U.S. coastal waters to the deep ocean. Data collected as part of the U.S. ECS Project are in the public domain and made available as rapidly as possible.
-* [USGS EROS Archive - Products Overview](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-products-overview?qt-science_center_objects=0#qt-science_center_objects) &mdash; Explore the world’s largest civilian collection of images of the Earth’s surface. Find satellite images and data, aerial photography, elevation and land cover datasets, digitized maps, and our Image Gallery collections.
-* [Coastal Elevation Models](https://www.ngdc.noaa.gov/mgg/coastal/coastal.html) &mdash; NCEI builds and distributes high-resolution, coastal digital elevation models (DEMs) that integrate ocean bathymetry and land topography supporting NOAA's mission to understand and predict changes in Earth's environment, and conserve and manage coastal and marine resources to meet our Nation's economic, social, and environmental needs.
-* [Digital Elevation Data](http://viewfinderpanoramas.org/dem3.html) &mdash; Links to many different sources of DEMs from around the world.
-
-### Elevation Maps
-
-Typical data sources include the following scales (adapted from [Getting USGS Data](http://vterrain.org/Misc/usgs_data.html)).
-
-| Arc             | Meters (approximate) | Used for                         |
-| --------------- | -------------------- | -------------------------------- |
-| 1 degree        | 110 kilometers       |                                  |
-| 7.5 arc minutes | 14 kilometers        | Size of a traditional map "quad" |
-| 30 arc seconds  | 1 kilometer          | Global elevation                 |
-| 15 arc seconds  | 0.5 kilometer        |                                  |
-| 3 arc seconds   | 90 meters            | World-wide SRTM                  |
-| 1 arc second    | 30 meters            | DEM from topo, USA SRTM          |
-| 1/3 arc second  | 10 meters            | DEM from topo                    |
-| 1/9 arc second  | 3.4 meters           | Newer DEM from LIDAR             |
-
-#### 1/30 arc second (~1 meter)
-
-* [1 meter Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/usgs-national-elevation-dataset-ned-1-meter-downloadable-data-collection-from-the-national-map-) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is one meter resolution.`
-  * This only had a subset of the US and Mexico, including Hawai'i.
-  * Land only.
-  * WMS Url: https://services.nationalmap.gov/arcgis/services/3DEPElevationIndex/MapServer/WMSServer?request=GetCapabilities&service=WMS
-
-#### 1/9 arc second (~3 meter)
-
-* [1/9th Arc-second Digital Elevation Models (DEMs) - USGS National Map 3DEP Downloadable Data Collection](https://catalog.data.gov/dataset/national-elevation-dataset-ned-1-9-arc-second-downloadable-data-collection-national-geospatial) &mdash; `This is a tiled collection of the 3D Elevation Program (3DEP) and is 1/9 arc-second (approximately 3 m) resolution.`
-  * `The seamless 1/9 arc-second DEM layer project-based coverage for portions of the conterminous United States, limited areas of Alaska, and Guam.`
-
-#### 1/3 arc second (~10 meter)
-
-* [NHDPlus High Resolution](https://www.usgs.gov/core-science-systems/ngp/national-hydrography/nhdplus-high-resolution) &mdash; `The NHDPlus HR is a national, geospatial model of the flow of water across the landscape and through the stream network. The NHDPlus HR is built using the National Hydrography Dataset High Resolution data at 1:24,000 scale or better, the 1/3 arc-second (10 meter ground spacing) 3D Elevation Program data, and the nationally complete Watershed Boundary Dataset.`
-
-#### 1 arc second (~30 meter)
-
-* [Shuttle Radar Topography Mission](https://www2.jpl.nasa.gov/srtm/)
-  * [SRTM](https://wiki.openstreetmap.org/wiki/SRTM) &mdash; `The Shuttle Radar Topography Mission (SRTM) (Wikipedia article) is a NASA mission conducted in 2000 to obtain elevation data for most of the world. It is the current dataset of choice for digital elevation model (DEM) data since it has a fairly high resolution (1 arc-second, or around 25 meters), has near-global coverage (from 56°S to 60°N), and is in the public domain.`
-  * [30-Meter SRTM Tile Downloader](https://dwtkns.com/srtm30m/) &mdash; This interface attempts to ease the pain of downloading 30-meter resolution elevation data from the Shuttle Radar Topography Mission.
-  * Land only.
-* [AW3D30](https://wiki.openstreetmap.org/wiki/AW3D30) &mdash; The ALOS Global Digital Surface Model "ALOS World 3D - 30m" (AW3D30) is the dataset with a horizontal resolution of approximately 30-meter mesh (1 arcsec), provided by Japan Aerospace Exploration Agency (JAXA) free of charge.
-  * Land only.
-* [ASTER Global Digital Elevation Map](https://asterweb.jpl.nasa.gov/gdem.asp) &mdash; Advanced Spaceborne Thermal Emission and Reflection Radiometer.
-  * [NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team (2019). ASTER Global Digital Elevation Model V003 [Data set]. NASA EOSDIS Land Processes DAAC. Accessed 2019-10-22 from https://doi.org/10.5067/ASTER/ASTGTM.003](https://search.earthdata.nasa.gov/search/granules/collection-details?p=C1575726572-LPDAAC_ECS&q=GDEM&tl=1555913685!4!!)
-  * Land only.
-
-#### 15 arc second (~500 meter)
-* [SRTM15+V2.0](https://topex.ucsd.edu/WWW_html/srtm15_plus.html) &mdash; [FTP](ftp://topex.ucsd.edu/pub/srtm15_plus/) &mdash; [figshare](https://figshare.com/projects/SRTM15_V2_0/62045)
-  * [Tozer, B. , D. T. Sandwell, W. H. F. Smith, C. Olson, J. R. Beale, and P. Wessel, Global bathymetry and topography at 15 arc seconds: SRTM15+, Accepted Earth and Space Science, August 3, 2019. DOI: 10.1029/2019EA000658](https://topex.ucsd.edu/sandwell/publications/180_Tozer_SRTM15+.pdf)
-* [GEBCO 2019 Gridded Bathymetry Data](https://www.gebco.net/data_and_products/gridded_bathymetry_data/) &mdash; GEBCO’s gridded bathymetric data set, the GEBCO_2019 grid, is a global terrain model for ocean and land at 15 arc-second intervals.
-* [SRTM15_PLUS](https://catalog.data.gov/dataset/srtm15-plus-data-fusion-of-shuttle-radar-topography-mission-srtm-land-topography-with-measured-) &mdash; To provide an improved mapping of the seafloor fabric globally, we have used available sounding data along with an improved global marine gravity model to develop at grid at 15 arcsecond resolution (~500 m). Land elevations are based on the best available data from SRTM, ASTER digital elevation models while the ice topography of Greenland and Antarctica is based on CryoSat-2 and IceSat. Ocean bathymetry is based on bathymetric predictions from the latest global gravity model from CryoSat-2 and Jason-1 along with 494 million carefully edited depth soundings at 15 arcsecond resolution. Bathymetry of the Arctic seafloor is based on the IBCAO grid with improved resolution in areas of multibeam coverage. We have used the bathymetry grid along with the improved gravity to construct a global map of abyssal hill amplitude and orientations and compare the orientations with predictions from seafloor age gradient analysis. Areas of disagreement reveal propagating rifts, microplates, and tectonic reorganizations. This SRTM15_PLUS provides the foundational bathymetry layer for Google Earth and is freely available at our ftp site (topex.ucsd.edu).
-
-#### 30 arc seconds (~1 km)
-
-* [USGS EROS Archive - Digital Elevation - Global 30 Arc-Second Elevation (GTOPO30)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30?qt-science_center_objects=0#qt-science_center_objects) &mdash; GTOPO30 is a global digital elevation model (DEM) with a horizontal grid spacing of 30 arc seconds (approximately 1 kilometer). GTOPO30 was derived from several raster and vector sources of topographic information.
-* [GMTED2010](https://www.usgs.gov/land-resources/eros/coastal-changes-and-impacts/gmted2010?qt-science_support_page_related_con=0#qt-science_support_page_related_con) &mdash; The USGS and the National Geospatial-Intelligence Agency (NGA) have collaborated on the development of a notably enhanced global elevation model called the Global Multi-resolution Terrain Elevation Data (GMTED2010), which has replaced GTOPO30 as the elevation dataset of choice for global and continental scale applications.
-* [USGS EROS Archive - Digital Elevation - Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation?qt-science_center_objects=0#qt-science_center_objects) &mdash; The Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010) provides a new level of detail in global topographic data. The GMTED2010 product suite contains seven new raster elevation products for each of the 30-, 15-, and 7.5-arc-second spatial resolutions and incorporates the current best available global elevation data.
-
-#### Multiresolution
-
-* [Ryan, W.B.F., S.M. Carbotte, J.O. Coplan, S. O'Hara, A. Melkonian, R. Arko, R.A. Weissel, V. Ferrini, A. Goodwillie, F. Nitsche, J. Bonczkowski, and R. Zemsky (2009), Global Multi-Resolution Topography synthesis, Geochem. Geophys. Geosyst., 10, Q03014, doi:10.1029/2008GC002332.](https://www.gmrt.org/about/index.php) &mdash; The Global Multi-Resolution Topography (GMRT) Synthesis is maintained as a multi-resolution gridded global Digital Elevation Model (DEM) that includes cleaned processed ship-based multibeam sonar data at their full spatial resolution (~100m in the deep sea).
-* [GMRTMapTool](https://www.gmrt.org/GMRTMapTool/) &mdash; This lets you view the data.
-* [GMRT Web Services](https://www.gmrt.org/services/index.php)
-
-### Geological Data
-
-* [Global Geology Data Sets. United States Naval Academy.](https://www.usna.edu/Users/oceano/pguth/md_help/html/global_geology.htm)
-* [Manaugh G, Twilley N (2013) What Did the Continents Look Like Millions of Years Ago? The Atlantic. September 23](https://www.theatlantic.com/technology/archive/2013/09/what-did-the-continents-look-like-millions-of-years-ago/279892/) &mdash; Article related to the maps below.
-* [Blakey R (2016) Global Paleogeography and Tectonics in Deep Time Series. Deep Time Maps. Colorado Plateau Geosystems Inc.](http://deeptimemaps.com/global-paleogeography-and-tectonics-in-deep-time-series/) &mdash; [Details](http://deeptimemaps.com/global-series-details/) &mdash; The series is completely proprietary, but it is interesting to look at.
-* [Macrostrat](https://macrostrat.org/)
-* [OneGeology](http://portal.onegeology.org/OnegeologyGlobal/) &mdash; This is an interface and initiative to provide a global, distributed set of data sources for geoscience.
-* [How to serve a OneGeology level 1 conformant Web Map Service (WMS) - Cookbook 1](http://www.onegeology.org/wmsCookbook/home.html)
-* [GeoSciML](http://www.onegeology.org/technical_progress/geosciml.html)
-* [Wright et al. (2013) Towards community-driven paleogeographic reconstructions: integrating open-access paleogeographic and paleobiology data with plate tectonics. Biogeosciences 10:1529-1541](https://www.biogeosciences.net/10/1529/2013/bg-10-1529-2013.pdf)
-* [Müller, R. D., Cannon, J., Qin, X., Watson, R. J., Gurnis, M., Williams, S., et al. 2018. GPlates: Building a virtual Earth through deep time. Geochemistry, Geophysics, Geosystems, 19. doi:10.1029/2018GC007584.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007584)
-* [Müller RD et al. (2019) A Global Plate Model Including Lithospheric Deformation Along Major Rifts and Orogens Since the Triassic. Tectonics. 38(6): 184-1907.](https://doi.org/10.1029/2018TC005462)
-* [Müller D, Seton M, Zahirovic S (2019) How Earth’s continents became twisted and contorted over millions of years. The Conversation. May 8.](https://theconversation.com/how-earths-continents-became-twisted-and-contorted-over-millions-of-years-116168)
-* [EarthByte Staff (2019) GPlates 2.2 software and data sets. EarthByte. September 5.](https://www.earthbyte.org/gplates-2-2-software-and-data-sets/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
-* [EarthByte Data Collections Direct Link](https://www.earthbyte.org/webdav/ftp/Data_Collections/) &mdash; Data the work with GPlates software. Contains research paper references required for anything derrived from the data.
-* [The Human-Induced Earthquake Database (HiQuake)](http://inducedearthquakes.org/)
-  * Foulger, G. R., Wilson, M., Gluyas, J., Julian, B. R., & Davies, R. (2017). Global review of human-induced earthquakes. Earth-Science Reviews.
-  * Wilson, M. P., Foulger, G. R., Gluyas, J. G., Davies, R. J., & Julian, B. R. (2017). HiQuake: The human‐induced earthquake database. Seismological Research Letters, 88(6), 1560-1565.
-* [Exploring Ocean Tectonics from Space](https://topex.ucsd.edu/grav_outreach/)
-  * [Sandwell DT, Müller RD, Smith WHF, Garcia E, Francis E (2013) New global marine gravity model from CryoSat-2 and Jason-1 reveals buried tectonic structure, Science. 346(6205): 65-67. doi: 10.1126/science.1258213](http://dx.doi.org/10.1126/science.1258213)
-* [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
-* [GeoMapApp](http://www.geomapapp.org/index.htm)
-  * Cite with `Figure made with GeoMapApp (www.geomapapp.org) / CC BY / CC BY (Ryan et al., 2009)`
-
-### Paleobiological Data
-
-* [Paleobiology Database](https://paleobiodb.org)
-* [Paleobiology Database: UW-Madison on Github](https://github.com/paleobiodb)
-* [EarthLife Consortium](http://earthlifeconsortium.org/)
-* [EarthLife Consortium on Github](https://github.com/EarthLifeConsortium)
-* [Neotoma Paleoecology Database and Community](https://www.neotomadb.org/)
-
 ## Learning
+
+* [Shaded Relief](http://www.shadedrelief.com/index.html) &mdash; This site started out as a resource for cartographers creating shaded relief, panoramas, land cover, and related raster art on maps. It has since grown to include my other cartographic interests and has become a repository for my maps, all of which are in the public domain. &mdash; Tom Patterson
+
+### QGIS
 
 * [A Gentle Introduction to GIS](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/index.html)
 * [QGIS Training Manual](https://docs.qgis.org/3.4/en/docs/training_manual/index.html)
