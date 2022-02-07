@@ -16,6 +16,12 @@ Information on open source GIS and data set sources
 * [Equal Earth projection](http://equal-earth.com/equal-earth-projection.html) &mdash; The Equal Earth map projection is a new equal-area pseudocylindrical projection for world maps jointly developed by Bojan Šavrič (Esri), Tom Patterson (US National Park Service), and Bernhard Jenny (Monash University). It was created to provide a visually pleasing alternative to the Gall-Peters projection, which some schools and socially concerned groups have adopted out of concern for fairness. Their priority is to show developing countries in the tropics and developed countries in the north with correctly proportioned sizes.
   * [Introducing the Equal Earth Projection (Video)](https://www.youtube.com/watch?v=m5Te3JZfPDM)
 
+## Learning GIS
+
+* [NCSU GIS/MEA582: Geospatial Modeling and Analysis](http://ncsu-geoforall-lab.github.io/geospatial-modeling-course/)
+* [GIS Practicum](https://www.baruch.cuny.edu/confluence/display/geoportal/GIS+Practicum)
+* [GEOG 585: Open Web Mapping](https://www.e-education.psu.edu/geog585/)
+
 ## Data Sources
 
 ### Catalogs for look up specific data
@@ -132,17 +138,32 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 
 ## GIS Software
 
-### Desktop
+### Desktop Mapping Tools
 
 * [OSGeoLive](https://live.osgeo.org/en/index.html) &mdash; self-contained bootable DVD, USB thumb drive or Virtual Machine based on Lubuntu, that allows you to try a wide variety of open source geospatial software without installing anything.
-* [QGIS](https://qgis.org/en/site/) &mdash; A Free and Open Source Geographic Information System
+* [QGIS](https://qgis.org/en/site/) &mdash; A Free and Open Source Geographic Information System.
 * [Alex's QGIS Python Plugins](https://plugins.bruy.me/plugins/plugins.xml) &mdash; A collection of QGIS plugins written by Alexander Bruy.
-* [GRASS](https://grass.osgeo.org/)
-* [gvGIS](http://www.gvsig.com/en/products/gvsig-desktop)
-* [Whitebox GAT Project](https://www.uoguelph.ca/~hydrogeo/Whitebox/index.html)
-* [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt)
+* [GRASS](https://grass.osgeo.org/) &mdash; GRASS GIS is a Geographic Information System used for geospatial data management and analysis, image processing, graphics/map production, spatial modeling, and visualization.
+  * > **G**eographic **R**esources **A**nalysis **S**upport **S**ystem, commonly referred to as GRASS GIS, is a Geographic Information System (GIS) technology built for vector and raster geospatial data management, geoprocessing, spatial modelling and visualization.
+* [gvGIS](http://www.gvsig.com/en/products/gvsig-desktop) &mdash; gvSIG Desktop (gvSIG from this point forward) is a Geographical Information System in free software, that is, a computer application aimed to represent, edit, analyze and manage information from the point of view of spatial relations.
+* [WhiteboxTools Open Core](https://www.whiteboxgeo.com/geospatial-software/) &mdash; WhiteboxTools is an advanced geospatial software package and a data analysis platform developed at the University of Guelph’s Geomorphometry and Hydrogeomatics Research Group (GHRG). The project began in January 2017 and quickly evolved in terms of its analytical capabilities. Contains more than 450 tools for processing various types of geospatial data.
+* [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt) &mdash; The Generic Mapping Tools (GMT) are widely used across the Earth, Ocean, and Planetary sciences and beyond. A diverse community uses GMT to process data, generate publication-quality illustrations, automate workflows, and make animations. Scientific journals, posters at meetings, Wikipedia pages, and many more publications display illustrations made by GMT. And the best part: it is free, open source software licensed under the LGPL.
+  * > GMT is an open source collection of about 90 command-line tools for manipulating geographic and Cartesian data sets (including filtering, trend fitting, gridding, projecting, etc.) and producing high-quality illustrations ranging from simple x–y plots via contour maps to artificially illuminated surfaces, 3D perspective views and animations. The GMT supplements add another 50 more specialized and discipline-specific tools. GMT supports over 30 map projections and transformations and requires support data such as GSHHG coastlines, rivers, and political boundaries and optionally DCW country polygons.
 * [GeoMapApp](http://www.geomapapp.org/)
+  * > GeoMapApp is a map-based application for browsing, visualizing and analyzing a diverse suite of curated global and regional geoscience data sets. These cover geophysics, geology, geochemistry, physical oceanography, climatology, and more.
+  * > GeoMapApp provides data layering, display customization and analytical tools to support the analysis of multidisciplinary data sets. Choose from Mercator, North polar and South polar projections. Save the images for papers and presentations.
+  * __Not open source, but freely available.__
 * [GPlates](http://www.gplates.org/index.html) &mdash; [Sourceforge](https://sourceforge.net/projects/gplates/)
+  * > GPlates is a plate tectonics program. Manipulate reconstructions of geological and paleogeographic features through geological time. Interactively visualize vector, raster and volume data. PyGPlates is the GPlates Python library. Get fine-grained access to GPlates functionality in your Python scripts.
+* [GeoGig](http://geogig.org/) &mdash; GeoGig is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
+  * > Users are able to import raw geospatial data (currently from Shapefiles, PostGIS or SpatiaLite) in to a repository where every change to the data is tracked. These changes can be viewed in a history, reverted to older versions, branched in to sandboxed areas, merged back in, and pushed to remote repositories.
+  * > GeoGig is written in Java, and available under the Eclipse Distribution License (a BSD 3 Clause license).
+
+### Smartphone/Tablet
+
+#### Android
+
+* [Arbiter](https://github.com/ROGUE-JCTD/Arbiter-Android)
 
 ### 3D Relief Map Making
 
@@ -163,25 +184,52 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
     * [Skymodels gallery](https://wanderingcartographer.wordpress.com/skymodels-gallery/)
   * [Skymodels With rcp: A Couple Quick Notes](https://gisjake.blogspot.com/2020/05/skymodels-with-rcp-couple-quick-notes.html)
   * [Kennelly, Patrick J., and A. James Stewart. "General sky models for illuminating terrains." International Journal of Geographical Information Science 28, no. 2 (2014): 383-406.](http://myweb.liu.edu/pkennell/reprints/peer-reviewed/GeneralSkyModels.pdf)
+* [Shaded Relief](http://www.shadedrelief.com/index.html) &mdash; This site started out as a resource for cartographers creating shaded relief, panoramas, land cover, and related raster art on maps. It has since grown to include my other cartographic interests and has become a repository for my maps, all of which are in the public domain. &mdash; Tom Patterson
+  * The tools covered in here are not all open source, but the principles still apply.
 
-### Frontend Frameworks
+### Frontend Frameworks (Client Only)
 
 * [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
 * [GeoMoose](https://www.geomoose.org/) &mdash; GeoMoose is a Web Client JavaScript Framework for displaying distributed cartographic data. GeoMoose has a number of strengths including modularity, configurability, and delivers a number of core functionalities in its packages. GeoMoose is also very light weight for servers making it easy to handle a large number of users, with a large number of layers, and a large number of services without stressing a server.
 * [OpenLayers](https://openlayers.org/) &mdash; OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data and markers loaded from any source. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the 2-clause BSD License (also known as the FreeBSD).
+* [GeoExt](https://www.geoext.org/) &mdash; JavaScript Toolkit for Rich Web Mapping Applications
+  * Uses Ext and OpenLayers.
 
-### Application Frameworks
+### Application Frameworks (Client/Server Combined)
 
-* [GeoServer](http://geoserver.org/) &mdash; GeoServer is an open source server for sharing geospatial data.
-* [Tegola](https://tegola.io/) &mdash; An open source vector tile server written in Go, Tegola takes geospatial data and slices it into vector tiles that can be efficiently delivered to any client.
-* [IstSOS](http://istsos.org/) &mdash; IstSOS is an OGC SOS server implementation written in Python.
-* [deegree](https://www.deegree.org/) &mdash; deegree is open source software for spatial data infrastructures and the geospatial web. deegree offers components for geospatial data management, including data access, visualization, discovery and security. Open standards are at the heart of deegree.
-* [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
+* [GeoNode](https://geonode.org/) &mdash; GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI).
+  * > GeoNode is a geospatial content management system, a platform for the management and publication of geospatial data. It brings together mature and stable open-source software projects under a consistent and easy-to-use interface allowing non-specialized users to share data and create interactive maps.
+  * > GeoNode is built upon a platform of proven open source components including Django, GeoServer, pycsw, OpenLayers and GeoExt. GeoNode implements many Open Geospatial Consortium (OGC) standards, including Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), KML, and Catalogue Service for Web (CSW). GeoNode development also contributes to the underlying open source projects and software libraries.
+  * [GeoSHAPE](https://github.com/ROGUE-JCTD/rogue_geonode) &mdash; A Django package that adds GeoSHAPE functionality to GeoNode.
+  * [MapLoom](https://github.com/ROGUE-JCTD/MapLoom) &mdash; MapLoom is a web mapping client based on OpenLayers 3. It provides full-featured editing capabilities for data stores in GeoServer - including PostGIS and GeoGig. For GeoGig layers, it lets you view history, and sync with other GeoGig repositories.
+  * [GeoGig](http://geogig.org/) &mdash; GeoGig is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
 * [Geomajas](http://www.geomajas.org/) &mdash; Geomajas is a collection of free and open source GIS libraries, tools and API's for a complete end-to-end web mapping solution.
-* [MapFish](http://www.mapfish.org/) &mdash; MapFish is a flexible and complete framework for building rich web-mapping applications. It emphasizes high productivity, and high-quality development.
-* [GeoSHAPE (Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement)](http://geoshape.org/) &mdash; GeoSHAPE gives organizations the ability to create, share, and visualize information through dynamic, collaborative maps.
+* [MapFish](http://www.mapfish.org/) &mdash; MapFish is a flexible and complete framework for building rich web-mapping applications. It emphasizes high productivity, and high-quality development. MapFish is based on the Pylons Python web framework. MapFish extends Pylons with geospatial-specific functionality. For example MapFish provides specific tools for creating web services that allows querying and editing geographic objects.
+* [GeoSHAPE (Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement) [This seems to not be available anymore. -JB]](http://web.archive.org/web/20191130064700/http://geoshape.org/) &mdash; GeoSHAPE gives organizations the ability to create, share, and visualize information through dynamic, collaborative maps.
+  * See GeoNode above.
+  * > Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement – is designed to enable collaboration on geospatial information between mission partners in connected and disconnected operations. GeoSHAPE has been built utilizing open source software and open standards to make it available for partners and to maximize interoperability. GeoSHAPE is the integration of a geospatial portal (GeoNode), a web mapping client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial server and database components. GeoSHAPE is the outcome of the Rapid Open Geospatial User-Driven Enterprise (ROGUE) Joint Capability Technology Demonstration (JCTD).
+  * [ROGUE GeoTech2013 Talk](https://speakerdeck.com/scottevil/rogue-geotech2013-talk)
+  * [Distributed Versioned Editing in Action](https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action)
+  * [Arbiter GeoDC Lightning Talk](https://speakerdeck.com/scottevil/arbiter-geodc-lightning-talk)
+  * [Case Study: Developing OpenLayers-based Mobile Applications — Syrus Mesdaghi, LMN Solutions / NSP-Noblis, Kevin Zusy, No](https://vimeo.com/106852747)
 
-### Data at Scale
+### GIS Servers (Server Only)
+
+* [GeoServer](http://geoserver.org/) &mdash; GeoServer is an open source server for sharing geospatial data. Written in Java, GWT, & Javascript.
+* [Tegola](https://www.tegola.io/) &mdash; An open source vector tile server written in Go, Tegola takes geospatial data and slices it into vector tiles that can be efficiently delivered to any client.
+* [IstSOS](http://istsos.org/) &mdash; IstSOS is an OGC SOS server implementation written in Python.
+  * _SOS_ stands for Sensor Observation Service.
+* [deegree](https://www.deegree.org/) &mdash; deegree is open source software for spatial data infrastructures and the geospatial web. deegree offers components for geospatial data management, including data access, visualization, discovery and security. Open standards are at the heart of deegree.
+  * > deegree webservices are implementations of the geospatial webservice specifications of the Open Geospatial Consortium (OGC) and the INSPIRE Network Services. deegree webservices 3.4 includes the following services:
+    * [Web Feature Service (WFS)](http://www.opengeospatial.org/standards/wfs): Provides access to raw geospatial data objects
+    * [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms): Serves maps rendered from geospatial data
+    * [Web Map Tile Service (WMTS)](http://www.opengeospatial.org/standards/wmts): Serves pre-rendered map tiles
+    * [Catalogue Service for the Web (CSW)](http://www.opengeospatial.org/standards/cat): Performs searches for geospatial datasets and services
+    * [Web Processing Service (WPS)](http://www.opengeospatial.org/standards/wps): Executes geospatial processes
+  * > With a single deegree webservices installation, you can set up one of the above services, all of them or even multiple services of the same type. The remainder of this chapter introduces some notable features of the different service implementations and provides learning trails for learning the configuration of each service.
+* [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
+
+### Data at Scale (Tools for Building Massive Systems to Process Data)
 
 * [SELEN](https://geodynamics.org/cig/software/selen/) &mdash; Program for solving the sea level equation.
 * [GeoMesa](https://www.geomesa.org/) &mdash; Store, index, query, and transform spatio-temporal data at scale.
@@ -236,11 +284,7 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
   * [Beucher R, Laik A, Giordani J, Mondy L, Farrington R, Barba LA, et al. underworldcode/UWGeodynamics: UWGeodynamics v2.8. Zenodo; 2019. doi:10.5281/zenodo.3366398](http://doi.org/10.5281/zenodo.3366398)
   * [Beucher R et al. (2019) UWGeodynamics: A teaching and research tool for numerical geodynamic modelling. Journal of Open Source Software. 4(36): 1136](https://doi.org/10.21105/joss.01136)
 
-## Learning
-
-* [Shaded Relief](http://www.shadedrelief.com/index.html) &mdash; This site started out as a resource for cartographers creating shaded relief, panoramas, land cover, and related raster art on maps. It has since grown to include my other cartographic interests and has become a repository for my maps, all of which are in the public domain. &mdash; Tom Patterson
-
-### QGIS
+## Learning QGIS
 
 * [A Gentle Introduction to GIS](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/index.html)
 * [QGIS Training Manual](https://docs.qgis.org/3.4/en/docs/training_manual/index.html)
@@ -281,15 +325,10 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [Spatio-temporal data handling and visualization in GRASS GIS](https://ncsu-osgeorel.github.io/grass-temporal-workshop/)
 * [Scripting GRASS GIS 7 with Python](https://www.youtube.com/watch?v=PX2UpMhp2hc) &mdash; YouTube Video
 * [QGIS Training Materials](https://github.com/kartoza/QGISTrainingWorkshop)
-* [Introducing GISworksheets](http://linfiniti.com/dla/)
 * [PyQGIS Developer Cookbook](https://docs.qgis.org/3.4/en/docs/pyqgis_developer_cookbook/index.html)
-* [NCSU GIS/MEA582: Geospatial Modeling and Analysis](http://ncsu-geoforall-lab.github.io/geospatial-modeling-course/)
-* [GIS Practicum](https://www.baruch.cuny.edu/confluence/display/geoportal/GIS+Practicum)
-* [GEOG 585: Open Web Mapping](https://www.e-education.psu.edu/geog585/)
-* [Distributed Versioned Editing in Action](https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action)
-* [Case Study: Developing OpenLayers-based Mobile Applications — Syrus Mesdaghi, LMN Solutions / NSP-Noblis, Kevin Zusy, No](https://vimeo.com/106852747)
-* [ROGUE GeoTech2013 Talk](https://speakerdeck.com/scottevil/rogue-geotech2013-talk)
-* [Arbiter GeoDC Lightning Talk](https://speakerdeck.com/scottevil/arbiter-geodc-lightning-talk)
+
+## Learning GPlates
+
 * [GPlates Tutorials](https://sites.google.com/site/gplatestutorials/)
 * [GPlates User Manual](http://www.gplates.org/user-manual/)
 * [Standard file formats for GPlates](https://www.earthbyte.org/standard-file-formats-for-gplates/)
