@@ -42,7 +42,7 @@ Information on open source GIS and data set sources
 
 * [Natural Earth Data](https://www.naturalearthdata.com/) &mdash; Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.
 
-### Elevation Maps
+### Digital Elevation Maps
 
 Typical data sources include the following scales (adapted from [Getting USGS Data](http://vterrain.org/Misc/usgs_data.html)).
 
