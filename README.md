@@ -38,6 +38,10 @@ Information on open source GIS and data set sources
 * [Coastal Elevation Models](https://www.ngdc.noaa.gov/mgg/coastal/coastal.html) &mdash; NCEI builds and distributes high-resolution, coastal digital elevation models (DEMs) that integrate ocean bathymetry and land topography supporting NOAA's mission to understand and predict changes in Earth's environment, and conserve and manage coastal and marine resources to meet our Nation's economic, social, and environmental needs.
 * [Digital Elevation Data](http://viewfinderpanoramas.org/dem3.html) &mdash; Links to many different sources of DEMs from around the world.
 
+### OpenStreetMap Data
+
+* [OpenStreetMap Data Extracts](http://download.geofabrik.de/index.html)
+
 ### Natural Earth Map Data
 
 * [Natural Earth Data](https://www.naturalearthdata.com/) &mdash; Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.
@@ -169,12 +173,18 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 
 * [Blender GIS](https://github.com/domlysz/BlenderGIS) &mdash; Blender addons to make the bridge between Blender and geographic data.
   * [Making 3D landscape in Blender using GIS Addon (Video)](https://www.youtube.com/watch?v=6Cw_uJCp39k)
-  * [CREATING SHADED RELIEF IN BLENDER](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/)
-  * [Shaded relief with BlenderGIS (2020), part 1](https://wanderingcartographer.wordpress.com/2019/11/08/making-shaded-relief-with-blendergis-2019/)
-  * [Shaded Relief with BlenderGIS (2019), part 2](https://wanderingcartographer.wordpress.com/2019/11/08/shaded-relief-with-blendergis-2019-part-2/)
-  * [Shaded relief with BlenderGIS (2019), part 3](https://wanderingcartographer.wordpress.com/2019/11/24/shaded-relief-with-blendergis-2019-part-3/)
-  * [Cutting large DEMs into square, partially overlapping tiles](https://wanderingcartographer.wordpress.com/2014/11/14/cutting-large-dems-into-square-partially-overlapping-tiles/)
-  * [A new map of the Bulkley Valley](https://wanderingcartographer.wordpress.com/2015/05/27/a-new-map-of-the-bulkley-valley/)
+  * somethingaboutmaps
+    * [CREATING SHADED RELIEF IN BLENDER](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/)
+    * [ADDING SHADED RELIEF IN PHOTOSHOP](https://somethingaboutmaps.wordpress.com/2014/10/26/adding-shaded-relief-in-photoshop/)
+    * [TERRAIN IN PHOTOSHOP: LAYER BY LAYER](https://somethingaboutmaps.wordpress.com/2016/10/03/terrain-in-photoshop/)
+    * [TOWARDS LESS BLENDER-Y RELIEF](https://somethingaboutmaps.wordpress.com/2022/01/13/towards-less-blender-y-relief/)
+    * [A GENERALIZATION RAMBLE](https://somethingaboutmaps.wordpress.com/2022/01/31/a-generalization-ramble/)
+  * The Wandering Cartographer
+    * [Shaded relief with BlenderGIS (2020), part 1](https://wanderingcartographer.wordpress.com/2019/11/08/making-shaded-relief-with-blendergis-2019/)
+    * [Shaded Relief with BlenderGIS (2019), part 2](https://wanderingcartographer.wordpress.com/2019/11/08/shaded-relief-with-blendergis-2019-part-2/)
+    * [Shaded relief with BlenderGIS (2019), part 3](https://wanderingcartographer.wordpress.com/2019/11/24/shaded-relief-with-blendergis-2019-part-3/)
+    * [Cutting large DEMs into square, partially overlapping tiles](https://wanderingcartographer.wordpress.com/2014/11/14/cutting-large-dems-into-square-partially-overlapping-tiles/)
+    * [A new map of the Bulkley Valley](https://wanderingcartographer.wordpress.com/2015/05/27/a-new-map-of-the-bulkley-valley/)
 * [Raster Chunk Processing (rcp)](https://github.com/jacobdadams/rcp) &mdash; Parallelized raster chunk processing. [Makes some of the prettiest relief maps. -JB]
   * [Part I: Introducing raster_chunk_processing.py (aka, RCP)](https://gisjake.blogspot.com/2018/10/introducing-rasterchunkprocessingpy-aka.html)
   * [Part II: raster_chunk_processing.py Installation and Usage](https://gisjake.blogspot.com/2018/10/rasterchunkprocessingpy-installation.html)
@@ -189,11 +199,24 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 
 ### Frontend Frameworks (Client Only)
 
-* [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
+  * [Dymaxion projection in OpenLayers](https://indiemaps.com/blog/2011/04/dymaxion-projection-in-openlayers/)
 * [GeoMoose](https://www.geomoose.org/) &mdash; GeoMoose is a Web Client JavaScript Framework for displaying distributed cartographic data. GeoMoose has a number of strengths including modularity, configurability, and delivers a number of core functionalities in its packages. GeoMoose is also very light weight for servers making it easy to handle a large number of users, with a large number of layers, and a large number of services without stressing a server.
-* [OpenLayers](https://openlayers.org/) &mdash; OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data and markers loaded from any source. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the 2-clause BSD License (also known as the FreeBSD).
 * [GeoExt](https://www.geoext.org/) &mdash; JavaScript Toolkit for Rich Web Mapping Applications
   * Uses Ext and OpenLayers.
+
+### Front End Libraries
+
+* [CesiumJS](https://github.com/AnalyticalGraphicsInc/cesium) &mdash; An open-source JavaScript library for world-class 3D globes and maps. :earth_americas:
+* [Leaflet](https://leafletjs.com/) &mdash; Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 39 KB of JS, it has all the mapping features most developers ever need.
+  * [Mapping with gpu.js](https://geoexamples.com/other/2018/04/30/mapping-with-gpujs.html/)
+    * [L.CanvasLayer](https://github.com/Sumbera/gLayers.Leaflet) &mdash; full screen generic canvas layer for leaflet.
+    * [Complex GIS calculations with gpu.js: Temperature interpolation](https://geoexamples.com/other/2018/09/17/gpujs-example.html/)
+  * [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) &mdash; A tiny, simple and fast heatmap plugin for Leaflet.
+* [OpenLayers](https://openlayers.org/) &mdash; OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data and markers loaded from any source. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the 2-clause BSD License (also known as the FreeBSD).
+* [geotiff.js](https://geotiffjs.github.io/) &mdash; geotiff.js aims to support as many TIFF features as possible, including various image compression methods, geographical information, internal tiling, pixel or band interleaving, automatic transformation from several color spaces to RGB, and much more.
+* [plotty.js](https://github.com/santilland/plotty/) &mdash; Plotting library experiments using WebGL and Canvas2D to apply color scale to a bufferarray object.
+  * [GEOTIFF.JS AND PLOTTY.JS VISUALIZING SCIENTIFIC RASTER DATA IN THE BROWSER](https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/)
+* [GPU.JS](https://gpu.rocks/) &mdash; GPU.js is a JavaScript Acceleration library for GPGPU (General purpose computing on GPUs) in JavaScript for Web and Node. GPU.js automatically transpiles simple JavaScript functions into shader language and compiles them so they run on your GPU. In case a GPU is not available, the functions will still run in regular JavaScript. For some more quick concepts, see Quick Concepts on the wiki.
 
 ### Application Frameworks (Client/Server Combined)
 
@@ -228,6 +251,7 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
     * [Web Processing Service (WPS)](http://www.opengeospatial.org/standards/wps): Executes geospatial processes
   * > With a single deegree webservices installation, you can set up one of the above services, all of them or even multiple services of the same type. The remainder of this chapter introduces some notable features of the different service implementations and provides learning trails for learning the configuration of each service.
 * [collada2gltf-web-service](https://github.com/AnalyticalGraphicsInc/collada2gltf-web-service) &mdash; Simple Node.js web service to convert 3D models from COLLADA to glTF.
+* [PostGIS](https://postgis.net/) &mdash; PostGIS is a spatial database extender for PostgreSQL object-relational database. It adds support for geographic objects allowing location queries to be run in SQL.
 
 ### Data at Scale (Tools for Building Massive Systems to Process Data)
 
