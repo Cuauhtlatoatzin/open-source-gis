@@ -66,6 +66,9 @@ This only lists the file formats I've recently come across. This is not a compre
 
 #### Lidar
 
+See a full list of other formats [in the PDAL docs.](https://pdal.io/en/stable/stages/readers.html)
+
+* [Entwine Point Tile](https://entwine.io/entwine-point-tile.html)
 * [ASPRS LAS](https://en.wikipedia.org/wiki/LAS_file_format)
   * [ASPRS LAS Specification](https://github.com/ASPRSorg/LAS)
 
@@ -144,6 +147,7 @@ Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/)
 ### Catalogs for look up specific data
 
 * [United States Interagency Elevation Inventory](https://coast.noaa.gov/inventory/) &mdash; The U.S. Interagency Elevation Inventory is a comprehensive, nationwide listing of known high-accuracy topographic and bathymetric data for the United States and its territories.
+* [USGS 3DEP Lidar Point Cloud Now Available as Amazon Public Dataset | U.S. Geological Survey](https://www.usgs.gov/news/technical-announcement/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset)
 * [Earthdata](https://earthdata.nasa.gov/) &mdash; NASA promotes the full and open sharing of all its data to research and applications communities, private industry, academia, and the general public. In order to meet the needs of these different communities, NASA’s Earth Observing System Data and Information System (EOSDIS) has provided various ways to discover, access, and use the data.
 * [Earthdata Data Recipes](https://earthdata.nasa.gov/learn/data-recipes) &mdash; Data recipes are tutorials or step-by-step instructions that have been developed by the Earth Observing System Data and Information System (EOSDIS) Distributed Active Archive Centers (DAACs) staff or EOSDIS systems engineers to help users learn how to discover, access, subset, visualize and use our data, information, tools and services. These recipes cover many different data products across the Earth science disciplines and different processing languages/software.
 * [TopoView](https://ngmdb.usgs.gov/topoview/) &mdash; TopoView highlights one of the USGS's most important and useful products, the topographic map. In 1879, the USGS began to map the Nation's topography. This mapping was done at different levels of detail, to support various land use and other purposes. As the years passed, the USGS produced new map versions of each area. TopoView shows the many and varied topographic maps of each of these areas through history. This can be particularly useful for historical purposes, such as finding the names of natural and cultural features that have changed over time.
@@ -254,6 +258,7 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [GPlates -- Paleogeographic Modelling Tools](http://web.gps.caltech.edu/~gurnis/Old/GPlates/gplates.html)
 * [GeoMapApp](http://www.geomapapp.org/index.htm)
   * Cite with `Figure made with GeoMapApp (www.geomapapp.org) / CC BY / CC BY (Ryan et al., 2009)`
+* [Geoblock](https://geoblock.sourceforge.net/) &mdash; The Geoblock program is integrated software for 2D/3D modelling, computational geometry and visualization of spatial datasets. The program can be used in Earth sciences particularly in such fields as geology modelling and mining, ore reserve estimations and prediction of mineral liberation under grinding and mineral processing operations.
 
 ### Paleobiological Data
 
@@ -273,9 +278,6 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [GRASS](https://grass.osgeo.org/) &mdash; GRASS GIS is a Geographic Information System used for geospatial data management and analysis, image processing, graphics/map production, spatial modeling, and visualization.
   * > **G**eographic **R**esources **A**nalysis **S**upport **S**ystem, commonly referred to as GRASS GIS, is a Geographic Information System (GIS) technology built for vector and raster geospatial data management, geoprocessing, spatial modelling and visualization.
 * [gvGIS](http://www.gvsig.com/en/products/gvsig-desktop) &mdash; gvSIG Desktop (gvSIG from this point forward) is a Geographical Information System in free software, that is, a computer application aimed to represent, edit, analyze and manage information from the point of view of spatial relations.
-* [WhiteboxTools Open Core](https://www.whiteboxgeo.com/geospatial-software/) &mdash; WhiteboxTools is an advanced geospatial software package and a data analysis platform developed at the University of Guelph’s Geomorphometry and Hydrogeomatics Research Group (GHRG). The project began in January 2017 and quickly evolved in terms of its analytical capabilities. Contains more than 450 tools for processing various types of geospatial data.
-* [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt) &mdash; The Generic Mapping Tools (GMT) are widely used across the Earth, Ocean, and Planetary sciences and beyond. A diverse community uses GMT to process data, generate publication-quality illustrations, automate workflows, and make animations. Scientific journals, posters at meetings, Wikipedia pages, and many more publications display illustrations made by GMT. And the best part: it is free, open source software licensed under the LGPL.
-  * > GMT is an open source collection of about 90 command-line tools for manipulating geographic and Cartesian data sets (including filtering, trend fitting, gridding, projecting, etc.) and producing high-quality illustrations ranging from simple x–y plots via contour maps to artificially illuminated surfaces, 3D perspective views and animations. The GMT supplements add another 50 more specialized and discipline-specific tools. GMT supports over 30 map projections and transformations and requires support data such as GSHHG coastlines, rivers, and political boundaries and optionally DCW country polygons.
 * [GeoMapApp](http://www.geomapapp.org/)
   * > GeoMapApp is a map-based application for browsing, visualizing and analyzing a diverse suite of curated global and regional geoscience data sets. These cover geophysics, geology, geochemistry, physical oceanography, climatology, and more.
   * > GeoMapApp provides data layering, display customization and analytical tools to support the analysis of multidisciplinary data sets. Choose from Mercator, North polar and South polar projections. Save the images for papers and presentations.
@@ -322,7 +324,6 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 
 ### Frontend Frameworks (Client Only)
 
-  * [Dymaxion projection in OpenLayers](https://indiemaps.com/blog/2011/04/dymaxion-projection-in-openlayers/)
 * [GeoMoose](https://www.geomoose.org/) &mdash; GeoMoose is a Web Client JavaScript Framework for displaying distributed cartographic data. GeoMoose has a number of strengths including modularity, configurability, and delivers a number of core functionalities in its packages. GeoMoose is also very light weight for servers making it easy to handle a large number of users, with a large number of layers, and a large number of services without stressing a server.
 * [GeoExt](https://www.geoext.org/) &mdash; JavaScript Toolkit for Rich Web Mapping Applications
   * Uses Ext and OpenLayers.
@@ -337,10 +338,12 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
   * [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat) &mdash; A tiny, simple and fast heatmap plugin for Leaflet.
 * [NASA WorldWind](https://worldwind.arc.nasa.gov/web/)
 * [OpenLayers](https://openlayers.org/) &mdash; OpenLayers makes it easy to put a dynamic map in any web page. It can display map tiles, vector data and markers loaded from any source. OpenLayers has been developed to further the use of geographic information of all kinds. It is completely free, Open Source JavaScript, released under the 2-clause BSD License (also known as the FreeBSD).
+  * [Dymaxion projection in OpenLayers](https://indiemaps.com/blog/2011/04/dymaxion-projection-in-openlayers/)
 * [geotiff.js](https://geotiffjs.github.io/) &mdash; geotiff.js aims to support as many TIFF features as possible, including various image compression methods, geographical information, internal tiling, pixel or band interleaving, automatic transformation from several color spaces to RGB, and much more.
 * [plotty.js](https://github.com/santilland/plotty/) &mdash; Plotting library experiments using WebGL and Canvas2D to apply color scale to a bufferarray object.
   * [GEOTIFF.JS AND PLOTTY.JS VISUALIZING SCIENTIFIC RASTER DATA IN THE BROWSER](https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/)
 * [GPU.JS](https://gpu.rocks/) &mdash; GPU.js is a JavaScript Acceleration library for GPGPU (General purpose computing on GPUs) in JavaScript for Web and Node. GPU.js automatically transpiles simple JavaScript functions into shader language and compiles them so they run on your GPU. In case a GPU is not available, the functions will still run in regular JavaScript. For some more quick concepts, see Quick Concepts on the wiki.
+* [potree](https://github.com/potree/potree/)
 
 ### Application Frameworks (Client/Server Combined)
 
@@ -350,7 +353,7 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
   * [GeoSHAPE](https://github.com/ROGUE-JCTD/rogue_geonode) &mdash; A Django package that adds GeoSHAPE functionality to GeoNode.
   * [MapLoom](https://github.com/ROGUE-JCTD/MapLoom) &mdash; MapLoom is a web mapping client based on OpenLayers 3. It provides full-featured editing capabilities for data stores in GeoServer - including PostGIS and GeoGig. For GeoGig layers, it lets you view history, and sync with other GeoGig repositories.
   * [GeoGig](http://geogig.org/) &mdash; GeoGig is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
-* [Geomajas](http://www.geomajas.org/) &mdash; Geomajas is a collection of free and open source GIS libraries, tools and API's for a complete end-to-end web mapping solution.
+* [Geomajas](https://web.archive.org/web/20211129072835/http://www.geomajas.org/) &mdash; Geomajas is a collection of free and open source GIS libraries, tools and API's for a complete end-to-end web mapping solution.
 * [MapFish](http://www.mapfish.org/) &mdash; MapFish is a flexible and complete framework for building rich web-mapping applications. It emphasizes high productivity, and high-quality development. MapFish is based on the Pylons Python web framework. MapFish extends Pylons with geospatial-specific functionality. For example MapFish provides specific tools for creating web services that allows querying and editing geographic objects.
 * [GeoSHAPE (Geospatial capabilities for Security, Humanitarian Assistance, Partner Engagement) [This seems to not be available anymore. -JB]](http://web.archive.org/web/20191130064700/http://geoshape.org/) &mdash; GeoSHAPE gives organizations the ability to create, share, and visualize information through dynamic, collaborative maps.
   * See GeoNode above.
@@ -390,29 +393,36 @@ in HBase, Accumulo, Cassandra, Kafka and Spark.
 * [Energy Exascale Earth System Model](https://e3sm.org/) &mdash; DOE's E3SM is a state-of-the-science Earth system model development and simulation project to investigate energy-relevant science using code optimized for DOE's advanced computers.
 * [Energy Exascale Earth System Model source code](https://github.com/E3SM-Project/E3SM)
 * [Common Infrastructure for Modeling the Earth (CIME - pronounced “SEAM”)](http://esmci.github.io/cime/index.html) &mdash; The Common Infrastructure for Modeling the Earth (CIME - pronounced “SEAM”) provides a Case Control System for configuring, compiling and executing Earth system models, data and stub model components, a driver and associated tools and libraries.
-* [MOAB — The Mesh-Oriented datABase](https://press3.mcs.anl.gov/sigma/moab-library/) &mdash; "The Mesh-Oriented datABase (MOAB) is a component for representing and evaluating mesh data. MOAB can store structured and unstructured mesh, consisting of elements in the finite element 'zoo' plus polygons and polyhedra. The functional interface to MOAB is simple yet powerful, allowing the representation of many types of metadata commonly found on the mesh. MOAB is optimized for efficiency in space and time, based on access to mesh in chunks rather than through individual entities, while also versatile enough to support individual entity access. The MOAB library can naturally represent finite element and other types of mesh data [1]. Various types of meta-data are often used in conjunction with a mesh. Examples include boundary condition groupings, material types, and provenance information for the mesh. Because the data model used in MOAB is so abstract, conventions are useful for describing how meta-data is stored into that data model."
+* [MOAB — The Mesh-Oriented datABase](https://sigma.mcs.anl.gov/moab-library/) &mdash; "The Mesh-Oriented datABase (MOAB) is a component for representing and evaluating mesh data. MOAB can store structured and unstructured mesh, consisting of elements in the finite element 'zoo' plus polygons and polyhedra. The functional interface to MOAB is simple yet powerful, allowing the representation of many types of metadata commonly found on the mesh. MOAB is optimized for efficiency in space and time, based on access to mesh in chunks rather than through individual entities, while also versatile enough to support individual entity access. The MOAB library can naturally represent finite element and other types of mesh data [1]. Various types of meta-data are often used in conjunction with a mesh. Examples include boundary condition groupings, material types, and provenance information for the mesh. Because the data model used in MOAB is so abstract, conventions are useful for describing how meta-data is stored into that data model."
 * [Parvis](https://trac.mcs.anl.gov/projects/parvis) &mdash; Parallel Analysis Tools and New Visualization Techniques for Ultra-Large Climate Data Sets.
 * [pagoda](https://github.com/jeffdaily/pagoda) &mdash; Parallel Analysis of GeOscienceData.
 * [Swift](http://swift-lang.org/main/index.php) &mdash; A simple tool for fast, easy scripting on big machines.
 * [PVFS: Parallel Virtual File System](https://www.anl.gov/mcs/pvfs-parallel-virtual-file-system) &mdash; PVFS (Parallel Virtual File System) serves as both a platform for I/O research, and a production file system for the cluster computing community.
 * [JIGSAW(GEO)](https://github.com/dengwirda/jigsaw-geo-matlab) &mdash; JIGSAW(GEO) is an unstructured mesh generator for geoscientific modelling.
 
-### Libraries
+### Utilities
 
-* [Terraformer](http://terraformer.io/) &mdash; Terraformer is an open source (MIT licensed) Javascript geo toolkit, built for the server and the browser.
-* [LocationTech JTS Topology Suite](https://projects.eclipse.org/projects/locationtech.jts) &mdash; The LocationTech JTS Topology Suite (JTS) is an open source Java software library that provides an object model for planar geometry together with a set of fundamental geometric functions.
-* [GEOS - Geometry Engine, Open Source](http://trac.osgeo.org/geos) &mdash; GEOS (Geometry Engine - Open Source) is a C++ port of the ​JTS Topology Suite (JTS). It aims to contain the complete functionality of JTS in C++. This includes all the ​OpenGIS Simple Features for SQL spatial predicate functions and spatial operators, as well as specific JTS enhanced functions. GEOS provides spatial functionality to many other projects and products.
+* [Entwine](https://entwine.io/index.html)
 * [PDAL - Point Data Abstraction Library](https://pdal.io/index.html) &mdash; PDAL is a C++ BSD library for translating and manipulating point cloud data. It is very much like the GDAL library which handles raster and vector data.
 * [LAStools](https://github.com/LAStools/LAStools) &mdash; efficient tools for LiDAR processing.
 * [OBJ2GLTF](https://github.com/CesiumGS/obj2gltf)
 * [CDB to 3D Tiles](https://github.com/CesiumGS/cdb-to-3dtiles)
 * [b3dm.tooling](https://github.com/bertt/b3dm.tooling)
 * [GDAL - Geospatial Data Abstraction Library](https://gdal.org/) &mdash; GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation.
+* [Orfeo ToolBox](https://www.orfeo-toolbox.org/) &mdash; Orfeo ToolBox is an open-source project for state-of-the-art remote sensing, including a fast image viewer, apps callable from Bash, Python or QGIS, and a powerful C++ API.
+* [WhiteboxTools Open Core](https://www.whiteboxgeo.com/geospatial-software/) &mdash; WhiteboxTools is an advanced geospatial software package and a data analysis platform developed at the University of Guelph’s Geomorphometry and Hydrogeomatics Research Group (GHRG). The project began in January 2017 and quickly evolved in terms of its analytical capabilities. Contains more than 450 tools for processing various types of geospatial data.
+* [The Generic Mapping Tools](https://github.com/GenericMappingTools/gmt) &mdash; The Generic Mapping Tools (GMT) are widely used across the Earth, Ocean, and Planetary sciences and beyond. A diverse community uses GMT to process data, generate publication-quality illustrations, automate workflows, and make animations. Scientific journals, posters at meetings, Wikipedia pages, and many more publications display illustrations made by GMT. And the best part: it is free, open source software licensed under the LGPL.
+  * > GMT is an open source collection of about 90 command-line tools for manipulating geographic and Cartesian data sets (including filtering, trend fitting, gridding, projecting, etc.) and producing high-quality illustrations ranging from simple x–y plots via contour maps to artificially illuminated surfaces, 3D perspective views and animations. The GMT supplements add another 50 more specialized and discipline-specific tools. GMT supports over 30 map projections and transformations and requires support data such as GSHHG coastlines, rivers, and political boundaries and optionally DCW country polygons.
+
+### Libraries
+
+* [Terraformer](http://terraformer.io/) &mdash; Terraformer is an open source (MIT licensed) Javascript geo toolkit, built for the server and the browser.
+* [LocationTech JTS Topology Suite](https://projects.eclipse.org/projects/locationtech.jts) &mdash; The LocationTech JTS Topology Suite (JTS) is an open source Java software library that provides an object model for planar geometry together with a set of fundamental geometric functions.
+* [GEOS - Geometry Engine, Open Source](https://libgeos.org/) &mdash; GEOS (Geometry Engine - Open Source) is a C++ port of the ​JTS Topology Suite (JTS). It aims to contain the complete functionality of JTS in C++. This includes all the ​OpenGIS Simple Features for SQL spatial predicate functions and spatial operators, as well as specific JTS enhanced functions. GEOS provides spatial functionality to many other projects and products.
 * [Parallel I/O Libraries (PIO)](https://ncar.github.io/ParallelIO/) &mdash; The Parallel IO libraries (PIO) are high-level parallel I/O C and Fortran libraries for structured grid applications. PIO provides a netCDF-like API, and allows users to designate some subset of processors to perform IO. Computational code calls netCDF-like functions to read and write data, and PIO uses the IO processors to perform all necessary IO.
 * [PnetCDF](https://trac.mcs.anl.gov/projects/parallel-netcdf) &mdash; PnetCDF is a high-performance parallel I/O library for accessing files in format compatibility with ​Unidata's NetCDF, specifically the formats of CDF-1, 2, and 5. The CDF-5 file format, an extension of CDF-2, supports unsigned data types and uses 64-bit integers to allow users to define large dimensions, attributes, and variables (> 2B array elements).
 * [ROMIO](https://www.mcs.anl.gov/projects/romio/) &mdash; ROMIO is a high-performance, portable implementation of MPI-IO, the I/O chapter in MPI-2. ROMIO is optimized for noncontiguous access patterns, which are common in parallel applications. It has an optimized implementation of collective I/O, an important optimization in parallel I/O.
 * [GeoTools](https://geotools.org/) &mdash; GeoTools is an open source Java library that provides tools for geospatial data.
-* [Orfeo ToolBox](https://www.orfeo-toolbox.org/) &mdash; Orfeo ToolBox is an open-source project for state-of-the-art remote sensing, including a fast image viewer, apps callable from Bash, Python or QGIS, and a powerful C++ API.
 * [pygplates](https://sourceforge.net/projects/gplates/files/pygplates/beta-revision-18/)
 * [PlateTectonicTools](https://github.com/EarthByte/PlateTectonicTools)
 * [spatial-temporal-exploration](https://github.com/EarthByte/spatial-temporal-exploration)
