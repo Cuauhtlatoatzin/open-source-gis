@@ -95,17 +95,37 @@ See a full list of other formats [in the PDAL docs.](https://pdal.io/en/stable/s
 
 #### Schemas
 
-Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/).
+Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/). Some of the items presented below are more historical in nature.
 
-* [OGC GeoSPARQL](https://en.wikipedia.org/wiki/OGC_GeoSPARQL) &mdash; A simple ontology for geo Features allowing geometry to be specified in GML or WKT along with predicates in [region cennection calculus](https://en.wikipedia.org/wiki/Region_connection_calculus) and [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
-* [W3C Geospatial Vocabulary](https://www.w3.org/2005/Incubator/geo/XGR-geo/)
-* [GeoVocab.org](http://geovocab.org/)
-* [GeoRDF](https://web.archive.org/web/20140123034509/http://www.w3.org/wiki/GeoRDF)
+* [OGC GeoSPARQL](https://en.wikipedia.org/wiki/OGC_GeoSPARQL) [Schema](https://github.com/opengeospatial/ogc-geosparql) &mdash; A simple ontology for geo Features allowing geometry to be specified in GML or WKT along with predicates in [region cennection calculus](https://en.wikipedia.org/wiki/Region_connection_calculus) and [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
+  * Defines a `geosparql:SpatialObject`.
+  * The most basic objects are `geosparql:Feature` and a `geosparql:Geometry` which are disjoint from one another, yet both inherit from `geosparql:SpatialObject`.
+  * The `Feature` object's relationships `hasGeometry` and `defaultGeometry` point to `Geometry` objects.
+  * Also see the work on the new version: [Car, N. J., & Homburg, T. (2022). GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard. ISPRS International Journal of Geo-Information, 11(2), 117.](https://doi.org/10.3390/ijgi11020117)
+* [GML](http://schemas.opengis.net/gml/) &mdash; in [version v3.2.1 they grafted `AbstractCurveSegment`, `AbstractSurfacePatch`, and `AbstractGeometry` on GeoSPARQL's `Geometry`](https://schemas.opengis.net/gml/3.2.1/gml_32_geometries.rdf).
 * [GeoRSS](https://web.archive.org/web/20220630194242/https://georss.org/)
+  * Based on `GML`.
+* [W3C Geospatial Vocabulary](https://www.w3.org/2005/Incubator/geo/XGR-geo/)
+  * This was an expiriment, but it's inline with the way GeoSPARQL and GML were harmonized.
+* [Basic Geo (WGS84 lat/long) Vocabulary](https://www.w3.org/2003/01/geo/) &mdash; Defines a `wgs84_pos:SpatialThing` and a derived `wgs84_pos:Point` which can have `wgs84_pos:lat`, `wgs84_pos:long`, and `wgs84_pos:alt`.
+* [NeoGeoVocab](http://geovocab.org/)
+  * [NeoGeo Spatial](http://geovocab.org/spatial.ttl)
+    * Defines a `Feature` but is semantically unconnected to other `Feature` objects in other ontologies.
+  * [NeoGeo Geometry](http://geovocab.org/geometry.ttl)
+    * Defines a `Geometry` object, but is semantically unconnected to other `Geometry` objects in other ontologies.
+    * Defines a `geometry` relationship that allows objects to point to the `Geometry` object.
+    * Defines a `Point` as a `wgs84_pos:Point`.
+    * Allows defining geometry through [`dct:hasFormat`](http://gadm.geovocab.org/id/0/60/geometry.html), where the format is determined by server content type negotiation, or `asWKT` (officially depricated).
+* [GeoRDF](https://web.archive.org/web/20140123034509/http://www.w3.org/wiki/GeoRDF)
+  * Based on `wgs84_pos`, with some extensions.
 * [GeoNames Ontology](http://www.geonames.org/ontology/documentation.html)
-* [Basic Geo (WGS84 lat/long) Vocabulary](https://www.w3.org/2003/01/geo/)
+  * Defines a `Feature` object which subclasses `wgs84_pos:SpacialThing` and is considered equivilent to a `NeoGeo Spatial:Feature`. Contains a `rdfs:seeAlso` reference to `http://schema.org/Place`.
+  * It also defines a `lat` and `long` which extend `wgs84_pos:lat` and `wgs84_pos:long`.
+* [KML](http://schemas.opengis.net/kml/)
+  * KML is interesting in that certain objects can have an `kml:longitude`, `kml:latitude`, `kml:altitude` (and maybe other directional/heading based attributes), while objects with more points essentially use the same format as WKT coordinates inside a `kml:coordinates` object (WKT formats as `lat1 lng1 alt1, lat2 lng2 alt2` while KML uses `lat1, lng1, alt1 lat2, lng2, alt2).
+  * Objects derriving from `kml:AbstractFeatureGroup` [can have a `kml:address` text field and/or a `xal:AddressDetails` object](http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd).
 * [xAL:AddressDetails](https://www.web3d.org/specifications/kml2.2/documentation/xAL_AddressDetails1.html) &mdash; has `AddressLatitude` and `AddressLongitude`, but no altitude or other geo data.
-* Schema.org &mdash; this is definitely more oriented towards search results and not serious Geospatial applications.
+* Schema.org &mdash; this is definitely more oriented towards search results and not serious Geospatial applications. Everything with a geo Property has `latitude`, `longitude`, and `elevation` properties.
   * [Schema.org GeospatialGeometry](https://schema.org/GeospatialGeometry) &mdash; Base class of all things geo in Schema.org. Note: `(Eventually to be defined as) a supertype of GeoShape designed to accommodate definitions from Geo-Spatial best practices.`
   * [Schema.org GeoShape](https://schema.org/GeoShape)
   * [Schema.org GeoCoordinates](https://schema.org/GeoCoordinates)
@@ -113,6 +133,10 @@ Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/)
   * [Schema.org PostalAddress](https://schema.org/PostalAddress)
 * [DublinCore Coverage](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/coverage/) &mdash; this is not at all for geo data.
   * > Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.
+
+![](./schema_relationships.jpeg)
+
+As we can see, there are similar relationships between `Feature`, `Geometry`, and parent objects.
 
 #### Sensor Schemas
 
