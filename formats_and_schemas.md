@@ -38,6 +38,10 @@ This only lists the file formats I've recently come across. This is not a compre
 * [OGC Moving Features](https://www.ogc.org/standards/movingfeatures)
 * [OGC API - Tiles - Part 1: Core](https://docs.ogc.org/is/20-057/20-057.html)
   * [OGC Two Dimensional Tile Matrix Set and Tile Set Metadata](https://docs.opengeospatial.org/is/17-083r4/17-083r4.html)
+* [HDT – Your binary format for RDF](https://www.rdfhdt.org/)
+  * [Binary RDF Representation for Publication and Exchange (HDT) Submission](https://www.w3.org/Submission/2011/03/)
+  * [HDT (Queryable compression format for Linked Data)
+ISWC2017 Tutorial - Saturday 21st October 2017](https://rdfhdt.github.io/ISWC2017/)
 * [Network Common Data Form (NetCDF)](https://en.wikipedia.org/wiki/NetCDF)
 
 ### Lidar
@@ -73,8 +77,15 @@ See a full list of other formats [in the PDAL docs.](https://pdal.io/en/stable/s
 
 ### Spatial
 
-Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/). Some of the items presented below are more historical in nature.
+#### Reading
 
+* [An agreed spatial ontology](https://www.w3.org/2015/spatial/wiki/An_agreed_spatial_ontology)
+* [Further development of GeoSPARQL](https://www.w3.org/2015/spatial/wiki/Further_development_of_GeoSPARQL)
+* [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/).
+
+#### Overview
+
+* [locn:geometry](https://www.w3.org/ns/locn#locn:geometry) &mdash; This is more of a container for other formats.
 * [OGC GeoSPARQL](https://en.wikipedia.org/wiki/OGC_GeoSPARQL) [Schema](https://github.com/opengeospatial/ogc-geosparql) &mdash; A simple ontology for geo Features allowing geometry to be specified in GML or WKT along with predicates in [region cennection calculus](https://en.wikipedia.org/wiki/Region_connection_calculus) and [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).
   * Defines a `geosparql:SpatialObject`.
   * The most basic objects are `geosparql:Feature` and a `geosparql:Geometry` which are disjoint from one another, yet both inherit from `geosparql:SpatialObject`.
@@ -111,6 +122,13 @@ Also see [Spatial Data on the Web Best Practices](https://www.w3.org/TR/sdw-bp/)
   * [Schema.org PostalAddress](https://schema.org/PostalAddress)
 * [DublinCore Coverage](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/terms/coverage/) &mdash; this is not at all for geo data.
   * > Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.
+* The Open Street Map data standard. This is defines a system of tagged nodes. The nodes can easily be mapped to a `SpatialThing`. The tags then provide for various properties like the address, street, city, state, province, zipcode, country, etc. This actually seems like the most flexible format, though there doesn't seem to be a bunch of tooling besides OSM libraries that use it.
+  - https://wiki.openstreetmap.org/wiki/OSM_XML
+  - https://wiki.openstreetmap.org/wiki/JOSM_file_format
+  - https://wiki.openstreetmap.org/wiki/Elements
+  - https://wiki.openstreetmap.org/wiki/Tags
+  - https://wiki.openstreetmap.org/wiki/Category:Addresses
+  - https://wiki.openstreetmap.org/wiki/Develop
 
 ![](./schema_relationships.jpeg)
 
