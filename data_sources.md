@@ -123,3 +123,27 @@ Typical data sources include the following scales (adapted from [Getting USGS Da
 * [EarthLife Consortium](http://earthlifeconsortium.org/)
 * [EarthLife Consortium on Github](https://github.com/EarthLifeConsortium)
 * [Neotoma Paleoecology Database and Community](https://www.neotomadb.org/)
+
+## Ecoregions/Bioregions/Biomes
+
+See definitions at [Ecoregion](https://en.wikipedia.org/wiki/Ecoregion), [Bioregion](https://en.wikipedia.org/wiki/Bioregion), [Biome](https://en.wikipedia.org/wiki/Biome).
+
+* Bailey, R. G. 1983. Delineation of ecosystem regions. Environmental Management 7: 365-373.
+Brown, D.E., Reichenbacher, F. and Franson, S.E. (1998). A Classification of North American Biotic Communities. University of Utah Press, Salt Lake City, Utah. 141p.
+* [Olson, D. M., Dinerstein, E., Wikramanayake, E. D., Burgess, N. D., Powell, G. V. N., Underwood, E. C., D'Amico, J. A., Itoua, I., Strand, H. E., Morrison, J. C., Loucks, C. J., Allnutt, T. F., Ricketts, T. H., Kura, Y., Lamoreux, J. F., Wettengel, W. W., Hedao, P., Kassem, K. R. 2001. Terrestrial ecoregions of the world: a new map of life on Earth. Bioscience 51(11):933-938.](https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2)
+* [Rutherford, M. C., Mucina, L., & Powrie, L. W. (2006). Biomes and bioregions of southern Africa. The vegetation of South Africa, Lesotho and Swaziland, 19, 30-51.](https://www.researchgate.net/publication/236982065_Biomes_and_bioregions_of_Southern_Africa)
+* [USGS. Global Ecosystems](https://www.usgs.gov/centers/geosciences-and-environmental-change-science-center/science/global-ecosystems?qt-science_center_objects=0#publications)
+* [WWF. (2012) Terrestrial Ecoregions of the World](https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world)
+* Rehfeldt, G.E., N.L. Crookston, C. Sáenz-Romero and E.M. Campbell (2012) North American vegetation model for land-use planning in a changing climate: a solution to large classification problems. Ecological Applications, 22(1):119-141
+* [Stein, H., Griebler, C., Berkhoff, S., Matzke, D., Fuchs, A., & Hahn, H. J. (2012). Stygoregions–a promising approach to a bioregional classification of groundwater systems. Scientific reports, 2(1), 1-9.](https://doi.org/10.1038/srep00673)
+* [Sayre, R., Dangermond, J., Frye, C., Vaughan, R., Aniello, P., Breyer, S., ... & Comer, P. (2014). A new map of global ecological land units—an ecophysiographic stratification approach. Washington, DC: Association of American Geographers, 46.](https://pubs.er.usgs.gov/publication/70187380)
+* [Dinerstein, E., Olson, D., Joshi, A., Vynne, C., Burgess, N. D., Wikramanayake, E., ... & Saleem, M. (2017). An ecoregion-based approach to protecting half the terrestrial realm. BioScience, 67(6), 534-545.](https://doi.org/10.1093/biosci/bix014)
+  * [Ecoregions](https://ecoregions.appspot.com/)
+* [Mucina, L. (2019). Biome: evolution of a crucial ecological and biogeographical concept. New Phytologist, 222(1), 97-114.](https://doi.org/10.1111/nph.15609)
+* [Freitas, C. G., Bacon, C. D., Souza-Neto, A. C., & Collevatti, R. G. (2019). Adjacency and area explain species bioregional shifts in neotropical palms. Frontiers in plant science, 10, 55.](https://doi.org/10.3389/fpls.2019.00055)
+* [Bioregions 2020](https://www.oneearth.org/bioregions-2020/)
+
+**Often times, various countries will have their own classification of the regions.**
+
+* [Ecoregions of North America](https://www.epa.gov/eco-research/ecoregions-north-america)
+* [Australia's ecoregions](https://www.dcceew.gov.au/environment/land/nrs/science/ibra/australias-ecoregions)
