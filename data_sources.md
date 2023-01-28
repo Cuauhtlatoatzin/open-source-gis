@@ -167,3 +167,10 @@ See definitions at [Ecoregion](https://en.wikipedia.org/wiki/Ecoregion), [Bioreg
 
 * [Ecoregions of North America](https://www.epa.gov/eco-research/ecoregions-north-america)
 * [Australia's ecoregions](https://www.dcceew.gov.au/environment/land/nrs/science/ibra/australias-ecoregions)
+
+## Groundwater
+
+* [Margat, J., & Van der Gun, J. (2013). Groundwater around the world: a geographic synopsis. Crc Press.](https://www.researchgate.net/publication/282660947_Groundwater_around_the_World_A_Geographic_Synopsis)
+* [World-wide Hydrogeological Mapping and Assessment Programme (WHYMAP)](https://www.whymap.org/whymap/EN/Home/whymap_node.html)
+* [The Global Groundwater Information System (GGIS)](https://ggis.un-igrac.org/)
+* [McDonough, L. K., Santos, I. R., Andersen, M. S., O’Carroll, D. M., Rutlidge, H., Meredith, K., ... & Baker, A. (2020). Changes in global groundwater organic carbon driven by climate change and urbanization. Nature Communications, 11(1), 1279.](https://doi.org/10.1038/s41467-020-14946-1)
